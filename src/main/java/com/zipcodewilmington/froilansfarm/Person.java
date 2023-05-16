@@ -1,6 +1,6 @@
 package com.zipcodewilmington.froilansfarm;
 
-public class Person {
+public abstract class Person implements NoiseMaker, Eater, Rider{
 
     private String name;
 
