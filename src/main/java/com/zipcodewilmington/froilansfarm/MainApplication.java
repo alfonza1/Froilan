@@ -9,6 +9,25 @@ public class MainApplication {
         System.out.println();
 
 
-        System.out.println();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //bruh moment
+
+
     }
+
 }
