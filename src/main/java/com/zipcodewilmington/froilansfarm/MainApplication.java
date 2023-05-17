@@ -25,10 +25,8 @@ public class MainApplication {
 
 
 
-    //bruh moment
 
-
+        //bruh moment
     }
-
 
 }
