@@ -18,18 +18,6 @@ public class MainApplication {
 
 
 
-
-
-
-
-
-
-
-    //bruh moment
-
-
     }
-
-    // I want to die jk
 
 }
