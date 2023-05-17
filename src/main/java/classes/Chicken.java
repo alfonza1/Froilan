@@ -1,3 +1,5 @@
+package classes;
+
 public class Chicken extends Animal implements Produce {
     private boolean hasBeenFertilized;
 
