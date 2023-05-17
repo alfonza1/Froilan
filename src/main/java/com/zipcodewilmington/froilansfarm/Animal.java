@@ -8,7 +8,5 @@ public Animal(){}
 
 
     @Override
-    public void makeNoise() {
-        System.out.println("Animal noise");
-    }
+    public abstract void makeNoise();
 }

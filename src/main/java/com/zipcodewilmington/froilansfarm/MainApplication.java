@@ -6,7 +6,7 @@ package com.zipcodewilmington.froilansfarm;
 public class MainApplication {
     public static void main(String[] args) {
         System.out.println(1);
-        System.out.println();
+        System.out.println("yo");
 
 
 
@@ -18,6 +18,15 @@ public class MainApplication {
 
 
 
+
+
+
+
+
+
+
+
+        //bruh moment
     }
 
 }
