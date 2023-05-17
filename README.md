@@ -14,15 +14,15 @@
 		* `classes.Chicken` is an `Animal` and a `Produce` which `yield` an `EdibleEgg` if `hasBeenFertilized` flag is `false`.
 
 	* `Rider` can `mount` and `dismount` a `Rideable` object.
-	* `Botanist` can `plant` a `classes.Crop` in a `CropRow`.
-	* `CropRow` can store many `classes.Crop`.
-	* `Field` can store many `CropRow`
+	* `Botanist` can `plant` a `classes.Crop` in a `classes.CropRow`.
+	* `classes.CropRow` can store many `classes.Crop`.
+	* `Field` can store many `classes.CropRow`
 	* `classes.Vehicle` are `NoiseMaker` and `Rideable`
 		* `FarmVehicle` can `operate` on a `Farm`
 			* `Tractor` is a `FarmVehicle` which can `harvest` a `classes.Crop`.
 
 		* `Aircraft` are `classes.Vehicle` which can  `fly`
-			* `CropDuster` is a `FarmVehicle` and `Aircraft` which can `fertilize` a `CropRow`
+			* `CropDuster` is a `FarmVehicle` and `Aircraft` which can `fertilize` a `classes.CropRow`
 
 
 	* `Produce` can `yield` an `Edible` object depending on their `hasBeenFertilized` [flag](https://en.wikipedia.org/wiki/Boolean_flag).
@@ -40,7 +40,7 @@
 # Establishing The Plot
 
 * `Froilan`, a `Farmer` has a `Farm` consisting of
-	* 1 `Field` of 5 `CropRow`.
+	* 1 `Field` of 5 `classes.CropRow`.
 		* Row 1 has `Corn`
 		* Row 2 has `Tomato`
 		* Row 3 and beyond grows arbitrary vegetation.
@@ -64,9 +64,9 @@
 			* Riding each `classes.Horse` in each `Stable`.
 			* Feeding each `classes.Horse` 3 ear of `Corn`.
 			* For breakfast,
-				* `Froilan` eats 1 `EarCorn`, 2 `Tomoato`, and 5 `Egg`.
-				* `Froilanda` eats 2 `EarCorn`, 1 `Tomoato`, and 2 `Egg`.
+				* `Froilan` eats 1 `EarCorn`, 2 `Tomoato`, and 5 `classes.Egg`.
+				* `Froilanda` eats 2 `EarCorn`, 1 `Tomoato`, and 2 `classes.Egg`.
 
-		* `Sunday`, `Froilan` plants 3 different type of `classes.Crop` in his first, second, and third `CropRow`.
-		* On `Monday`, his sister, `Froilanda` uses the `CropDuster` to `fly` over the `Field` and `fertilize` each of the `CropRow`
-		* On `Tuesday`, `Froilan` uses his `Tractor` to `harvest` each `classes.Crop` in each `CropRow`.
+		* `Sunday`, `Froilan` plants 3 different type of `classes.Crop` in his first, second, and third `classes.CropRow`.
+		* On `Monday`, his sister, `Froilanda` uses the `CropDuster` to `fly` over the `Field` and `fertilize` each of the `classes.CropRow`
+		* On `Tuesday`, `Froilan` uses his `Tractor` to `harvest` each `classes.Crop` in each `classes.CropRow`.
