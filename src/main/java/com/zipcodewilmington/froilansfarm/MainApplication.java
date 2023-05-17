@@ -1,4 +1,4 @@
-package com.zipcodewilmington.froilansfarm.classes;
+package com.zipcodewilmington.froilansfarm;
 
 /**
  * Created by leon on 2/26/18.
