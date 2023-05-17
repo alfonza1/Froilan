@@ -1,4 +1,6 @@
-package com.zipcodewilmington.froilansfarm;
+package interfaces;
+
+import interfaces.Rideable;
 
 public interface Rider {
 

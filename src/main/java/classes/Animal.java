@@ -1,4 +1,6 @@
-package com.zipcodewilmington.froilansfarm;
+package classes;
+
+import interfaces.NoiseMaker;
 
 public abstract class Animal implements NoiseMaker,Eater{
 

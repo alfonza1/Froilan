@@ -10,31 +10,31 @@
 	* `Eater` can `eat` an `Edible` object.
 	* `NoiseMaker` can `makeNoise`
 	* `Animal` is a `NoiseMaker` and `Eater`
-		* `Horse` is an `Animal` and `Rideable`
-		* `Chicken` is an `Animal` and a `Produce` which `yield` an `EdibleEgg` if `hasBeenFertilized` flag is `false`.
+		* `classes.Horse` is an `Animal` and `Rideable`
+		* `classes.Chicken` is an `Animal` and a `Produce` which `yield` an `EdibleEgg` if `hasBeenFertilized` flag is `false`.
 
 	* `Rider` can `mount` and `dismount` a `Rideable` object.
-	* `Botanist` can `plant` a `Crop` in a `CropRow`.
-	* `CropRow` can store many `Crop`.
+	* `Botanist` can `plant` a `classes.Crop` in a `CropRow`.
+	* `CropRow` can store many `classes.Crop`.
 	* `Field` can store many `CropRow`
-	* `Vehicle` are `NoiseMaker` and `Rideable`
+	* `classes.Vehicle` are `NoiseMaker` and `Rideable`
 		* `FarmVehicle` can `operate` on a `Farm`
-			* `Tractor` is a `FarmVehicle` which can `harvest` a `Crop`.
+			* `Tractor` is a `FarmVehicle` which can `harvest` a `classes.Crop`.
 
-		* `Aircraft` are `Vehicle` which can  `fly`
+		* `Aircraft` are `classes.Vehicle` which can  `fly`
 			* `CropDuster` is a `FarmVehicle` and `Aircraft` which can `fertilize` a `CropRow`
 
 
 	* `Produce` can `yield` an `Edible` object depending on their `hasBeenFertilized` [flag](https://en.wikipedia.org/wiki/Boolean_flag).
-		* `Crop` is a `Produce` which can `yield` an `Edible` object depending on its `hasBeenHarvested` and `hasBeenFertilized` flag.
-			* `CornStalk` is a `Crop` which can `yield` a `EarCorn`
-			* `TomatoPlant` is a `Crop` which can `yield` a `Tomato`
+		* `classes.Crop` is a `Produce` which can `yield` an `Edible` object depending on its `hasBeenHarvested` and `hasBeenFertilized` flag.
+			* `CornStalk` is a `classes.Crop` which can `yield` a `EarCorn`
+			* `TomatoPlant` is a `classes.Crop` which can `yield` a `Tomato`
 
 	* `Person` can `makeNoise` and can `eat` an `Edible` object.
 	* `Farmer` is an `Eater`, a `Rider`, a `Botanist`, and a `Person`.
-	* `Stable` stores many `Horse`.
+	* `Stable` stores many `classes.Horse`.
 	* `FarmHouse` stores many `Person`
-	* `ChickenCoop` stores many `Chicken`
+	* `ChickenCoop` stores many `classes.Chicken`
 	* `Farm` stores many `Stable`, many `ChickenCoop`, and a single `FarmHouse`
 
 # Establishing The Plot
@@ -45,8 +45,8 @@
 		* Row 2 has `Tomato`
 		* Row 3 and beyond grows arbitrary vegetation.
 
-	* 15 `Chicken` across 4 `ChickenCoop`
-	* 10 `Horse` across 3 `Stable`.
+	* 15 `classes.Chicken` across 4 `ChickenCoop`
+	* 10 `classes.Horse` across 3 `Stable`.
 	* 2 `FarmVehicle`
 	* 1 `Aircraft`
 	* His sister, `Froilanda`, is a `Pilot` who uses a `CropDuster`.
@@ -61,12 +61,12 @@
 * Create a separate Test class for each day in the following scenario.
 	* As a farmer, Froilan must stick to a rigorous agricultural routine.
 		* Every morning, `Froilan` and `Froilanda` begin their morning by
-			* Riding each `Horse` in each `Stable`.
-			* Feeding each `Horse` 3 ear of `Corn`.
+			* Riding each `classes.Horse` in each `Stable`.
+			* Feeding each `classes.Horse` 3 ear of `Corn`.
 			* For breakfast,
 				* `Froilan` eats 1 `EarCorn`, 2 `Tomoato`, and 5 `Egg`.
 				* `Froilanda` eats 2 `EarCorn`, 1 `Tomoato`, and 2 `Egg`.
 
-		* `Sunday`, `Froilan` plants 3 different type of `Crop` in his first, second, and third `CropRow`.
+		* `Sunday`, `Froilan` plants 3 different type of `classes.Crop` in his first, second, and third `CropRow`.
 		* On `Monday`, his sister, `Froilanda` uses the `CropDuster` to `fly` over the `Field` and `fertilize` each of the `CropRow`
-		* On `Tuesday`, `Froilan` uses his `Tractor` to `harvest` each `Crop` in each `CropRow`.
+		* On `Tuesday`, `Froilan` uses his `Tractor` to `harvest` each `classes.Crop` in each `CropRow`.
