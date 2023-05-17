@@ -1,10 +1,10 @@
 package com.zipcodewilmington.froilansfarm;
 
-public abstract class  Animal implements NoiseMaker{
+public abstract class Animal implements NoiseMaker{
 
 
 
-
+public Animal(){}
 
 
 
@@ -13,6 +13,6 @@ public abstract class  Animal implements NoiseMaker{
 
     @Override
     public void makeNoise() {
-
+        System.out.println("Animal noise");
     }
 }
