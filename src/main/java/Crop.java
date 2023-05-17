@@ -6,7 +6,7 @@ private boolean hasBeenHarvested;
         return hasBeenHarvested;
     }
 
-    public boolean isHasBeenFertilized() {
+    public boolean hasBeenFertilized() {
         return hasBeenFertilized;
     }
 
