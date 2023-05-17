@@ -10,8 +10,6 @@ private boolean hasBeenHarvested;
         return hasBeenFertilized;
     }
 
-    //    public void fertilize(){
-//
-//    }
+  
 
 }
