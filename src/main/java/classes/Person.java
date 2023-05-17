@@ -1,4 +1,4 @@
-package com.zipcodewilmington.froilansfarm;
+package classes;
 
 public abstract class Person implements NoiseMaker, Eater, Rider{
 
