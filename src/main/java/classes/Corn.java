@@ -1,17 +1,22 @@
 package classes;
 
 import interfaces.Edible;
+import interfaces.Produce;
 
-public class Corn implements Edible {
+public class Corn implements Edible, Produce {
 
-    public boolean hasBeenHarvested() {
-        return false;
+
+//    @Override
+//    public EdibleEgg yield() {
+//        return null;
+//    }
+
+
+    public Corn() {
     }
 
-    public void harvest(String CornAmt){
-
-        CornAmt = CornAmt + 1;
-
+    @Override
+    public String toString() {
+        return "Corn";
     }
-
 }
