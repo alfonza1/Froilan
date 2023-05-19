@@ -22,4 +22,5 @@ public abstract class Person implements NoiseMaker, Eater, Rider {
     public void setName(String name) {
         this.name = name;
 
+    }
 }
