@@ -1,5 +1,7 @@
 package classes;
 
+import interfaces.Rideable;
+
 public class Vehicle implements Rideable, Noisemaker{
 
 
