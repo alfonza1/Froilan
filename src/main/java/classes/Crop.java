@@ -1,3 +1,5 @@
+package classes;
+
 public class Crop implements Produce {
 private boolean hasBeenFertilized;
 private boolean hasBeenHarvested;

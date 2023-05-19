@@ -1,4 +1,4 @@
-package com.zipcodewilmington.froilansfarm;
+package classes;
 
 public class Farmer extends Person implements Botanist{
 
