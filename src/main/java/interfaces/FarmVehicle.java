@@ -1,5 +1,7 @@
 package interfaces;
 
+import classes.Farm;
+
 public interface FarmVehicle {
 
     void operate(Farm farm);
