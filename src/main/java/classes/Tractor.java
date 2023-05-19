@@ -1,15 +1,9 @@
 package classes;
 
-import interfaces.Aircraft;
 import interfaces.FarmVehicle;
 
-public class CropDuster extends Vehicle implements Aircraft, FarmVehicle {
+public class Tractor extends Vehicle implements FarmVehicle {
 
-
-    @Override
-    public void fly() {
-
-    }
 
     @Override
     public void operate(Farm farm) {

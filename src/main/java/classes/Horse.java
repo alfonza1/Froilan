@@ -1,5 +1,7 @@
 package classes;
 
+import interfaces.Rideable;
+
 public class Horse extends Animal implements Rideable {
 
 
@@ -7,7 +9,14 @@ public class Horse extends Animal implements Rideable {
 
     }
 
+    @Override
+    public void makeNoise() {
+
+    }
 
 
+    @Override
+    public void canEat() {
 
+    }
 }
