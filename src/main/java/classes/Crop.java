@@ -1,5 +1,7 @@
 package classes;
 
+import interfaces.Produce;
+
 public class Crop implements Produce {
 private boolean hasBeenFertilized;
 private boolean hasBeenHarvested;
@@ -12,6 +14,10 @@ private boolean hasBeenHarvested;
         return hasBeenFertilized;
     }
 
-  
 
+    @Override
+    public EdibleEgg yield() {
+
+        return null;
+    }
 }
