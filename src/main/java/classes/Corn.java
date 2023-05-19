@@ -1,6 +1,8 @@
-package com.zipcodewilmington.froilansfarm;
+package classes;
 
-public class Corn implements Edible{
+import interfaces.Edible;
+
+public class Corn implements Edible {
 
     public boolean hasBeenHarvested() {
         return false;

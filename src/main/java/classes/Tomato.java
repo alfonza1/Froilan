@@ -1,6 +1,8 @@
-package com.zipcodewilmington.froilansfarm;
+package classes;
 
-public class Tomato implements Edible{
+import interfaces.Edible;
+
+public class Tomato implements Edible {
 
     public boolean hasBeenHarvested() {
         return false;

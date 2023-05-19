@@ -1,4 +1,4 @@
-package com.zipcodewilmington.froilansfarm;
+package interfaces;
 
 public interface FarmVehicle {
 
