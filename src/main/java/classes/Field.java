@@ -7,5 +7,7 @@ public class Field {
 
     private List<CropRow> cropRow = new LinkedList<>();
 
-
+    public Field(List<CropRow> cropRow) {
+        this.cropRow = cropRow;
+    }
 }

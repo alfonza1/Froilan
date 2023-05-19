@@ -2,7 +2,7 @@ package classes;
 
 import interfaces.Produce;
 
-public class Crop implements Produce {
+public abstract class Crop implements Produce {
 private boolean hasBeenFertilized;
 private boolean hasBeenHarvested;
 
@@ -15,9 +15,13 @@ private boolean hasBeenHarvested;
     }
 
 
-    @Override
-    public EdibleEgg yield() {
+//    @Override
+//    public EdibleEgg yield() {
+//        return null;
+//    }
 
-        return null;
+    @Override
+    public String toString() {
+        return getClass().getSimpleName();
     }
 }

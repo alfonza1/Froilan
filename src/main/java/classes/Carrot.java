@@ -2,10 +2,10 @@ package classes;
 
 import interfaces.Edible;
 
-public class Tomato implements Edible {
+public class Carrot implements Edible {
 
     @Override
     public String toString() {
-        return "Tomato";
+        return "Carrot";
     }
 }
