@@ -1,10 +1,10 @@
 package classes;
 
 
-import interfaces.Rideable;
 import interfaces.NoiseMaker;
+import interfaces.Rideable;
 
-public class Vehicle implements Rideable, Noisemaker{
+public abstract class Vehicle implements Rideable, NoiseMaker{
 
 
     public Vehicle() {
@@ -15,7 +15,7 @@ public class Vehicle implements Rideable, Noisemaker{
     @Override
    public void makeNoise(){
 
-        System.out.println("I am a vehicle and I make noise");
+       // System.out.println("I am a vehicle and I make noise");
     }
 
 
