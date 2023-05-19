@@ -1,5 +1,7 @@
 package classes;
 
+import interfaces.Produce;
+
 public class Chicken extends Animal implements Produce {
     private boolean hasBeenFertilized;
 
@@ -10,6 +12,11 @@ public class Chicken extends Animal implements Produce {
 
     public Chicken(){
 
+
+    }
+
+    @Override
+    public void makeNoise() {
 
     }
 
@@ -27,4 +34,4 @@ public class Chicken extends Animal implements Produce {
 
 
 
-}
+
