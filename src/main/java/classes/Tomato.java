@@ -5,12 +5,15 @@ import interfaces.Edible;
 public class Tomato implements Edible {
 
     public boolean hasBeenHarvested() {
+
         return false;
     }
 
-    public void harvest(String tomatoAmt){
+    public int harvest(int tomatoAmt){
 
         tomatoAmt = tomatoAmt + 1;
+
+        return tomatoAmt;
 
     }
 
