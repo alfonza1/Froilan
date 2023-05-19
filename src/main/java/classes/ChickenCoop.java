@@ -10,4 +10,5 @@ public class ChickenCoop {
     public ChickenCoop(List<Chicken> chickens) {
         this.chickens = chickens;
     }
+
 }

@@ -7,5 +7,4 @@ public class Field {
 
     private List<CropRow> cropRow = new LinkedList<>();
 
-
 }
