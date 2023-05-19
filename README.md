@@ -64,8 +64,8 @@
 			* Riding each `classes.Horse` in each `Stable`.
 			* Feeding each `classes.Horse` 3 ear of `Corn`.
 			* For breakfast,
-				* `Froilan` eats 1 `EarCorn`, 2 `Tomoato`, and 5 `classes.Egg`.
-				* `Froilanda` eats 2 `EarCorn`, 1 `Tomoato`, and 2 `classes.Egg`.
+				* `Froilan` eats 1 `EarCorn`, 2 `Tomoato`, and 5 `classes.EdibleEgg`.
+				* `Froilanda` eats 2 `EarCorn`, 1 `Tomoato`, and 2 `classes.EdibleEgg`.
 
 		* `Sunday`, `Froilan` plants 3 different type of `classes.Crop` in his first, second, and third `classes.CropRow`.
 		* On `Monday`, his sister, `Froilanda` uses the `CropDuster` to `fly` over the `Field` and `fertilize` each of the `classes.CropRow`

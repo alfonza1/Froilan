@@ -1,6 +1,8 @@
 package interfaces;
 
+import classes.EdibleEgg;
+
 public interface Produce {
 
-    void yield();
+    EdibleEgg yield();
 }

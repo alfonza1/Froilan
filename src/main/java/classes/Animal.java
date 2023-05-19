@@ -2,7 +2,7 @@ package classes;
 
 import interfaces.NoiseMaker;
 
-public abstract class Animal implements NoiseMaker,Eater{
+public abstract class Animal implements NoiseMaker, Eater{
 
 
 
