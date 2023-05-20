@@ -12,6 +12,7 @@ public class Tractor extends Vehicle implements FarmVehicle {
     @Override
     public void operate(Farm farm) {
 
+
     }
 
     @Override
@@ -19,6 +20,11 @@ public class Tractor extends Vehicle implements FarmVehicle {
 
     }
 
+
+    @Override
+    public void makeNoise() {
+        System.out.println("Skirrttttt skirtttt");
+    }
 
 }
 

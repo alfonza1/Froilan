@@ -6,9 +6,11 @@ import interfaces.Rideable;
 import interfaces.Rider;
 
 public class Pilot extends Person implements Rider {
+
     public Pilot(String name) {
         super(name);
     }
+
 
     @Override
     public void eat(Edible edible) {
@@ -30,3 +32,4 @@ public class Pilot extends Person implements Rider {
 
     }
 }
+
