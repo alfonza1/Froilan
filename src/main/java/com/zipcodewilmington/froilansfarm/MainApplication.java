@@ -61,50 +61,33 @@ public class MainApplication {
         cropRow4.yield();
         cropRow5.yield();
 
-        int Chicken[] = new int[15];
+        Chicken[] chick = new Chicken[15];
 
-        for (int i = 0; i < Chicken.length; i++){
+        for (int i = 0; i < chick.length; i++){
 
-            Chicken[i] = i+1;
+            chick[i] = new Chicken();
 
         }
 
-        boolean run = true;
+        LinkedList<Chicken> coopOne = new LinkedList<>();
+        LinkedList<Chicken> coopTwo = new LinkedList<>();
+        LinkedList<Chicken> coopThree = new LinkedList<>();
+        LinkedList<Chicken> coopFour = new LinkedList<>();
 
-        while(run = true){
 
-            int equal = 0;
-
-            for (int each : Chicken){
-
-                if (){
-
-                    ChickenCoop.addChick();
-
-                } else if () {
-
-                    ChickenCoop.addChick();
-
-                } else if () {
-
-                    ChickenCoop.addChick();
-
-                } else if () {
-
-                    ChickenCoop.addChick();
-
-                } else {
-                    
-                    equal = equal + 1;
-                }
+        ChickenCoop[] coops = new ChickenCoop[4];
+        coops[0] = new ChickenCoop(List.of(new Chicken[]{chick[0], chick[1], chick[2], chick[3]}));
+        coops[1] = new ChickenCoop(List.of(new Chicken[]{chick[5], chick[6], chick[7], chick[8]}));
+        coops[2] = new ChickenCoop(List.of(new Chicken[]{chick[10], chick[11], chick[12], chick[13]}));
+        coops[3] = new ChickenCoop(List.of(new Chicken[]{chick[4], chick[9], chick[14]}));
 
 
             }
 
         }
 
-    }
 
-}
+
+
 
 

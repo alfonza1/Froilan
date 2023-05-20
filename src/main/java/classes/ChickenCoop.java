@@ -16,5 +16,8 @@ public class ChickenCoop {
 
         chickens.add(chick);
     }
-
+    @Override
+    public String toString() {
+        return getClass().getSimpleName();
+    }
 }

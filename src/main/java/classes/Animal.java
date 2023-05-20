@@ -12,4 +12,9 @@ public Animal(){}
 
     @Override
     public abstract void makeNoise();
+    @Override
+    public String toString() {
+        return getClass().getSimpleName();
+    }
 }
+
