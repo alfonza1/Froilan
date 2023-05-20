@@ -1,6 +1,7 @@
 package com.zipcodewilmington.froilansfarm;
 
 import classes.*;
+import interfaces.Aircraft;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -55,11 +56,11 @@ public class MainApplication {
         CropRow cropRow4 = new CropRow(crop4);
         CropRow cropRow5 = new CropRow(crop5);
 
-        System.out.println(cropRow1.getCrops());
-        System.out.println(cropRow2.getCrops());
-        System.out.println(cropRow3.getCrops());
-        System.out.println(cropRow4.getCrops());
-        System.out.println(cropRow5.getCrops());
+//        System.out.println(cropRow1.getCrops());
+//        System.out.println(cropRow2.getCrops());
+//        System.out.println(cropRow3.getCrops());
+//        System.out.println(cropRow4.getCrops());
+//        System.out.println(cropRow5.getCrops());
 
         cropRow1.yield();
         cropRow2.yield();
@@ -67,9 +68,135 @@ public class MainApplication {
         cropRow4.yield();
         cropRow5.yield();
 
+        List<Chicken> chickenCoop1 = new LinkedList<>();
+        List<Chicken> chickenCoop2 = new LinkedList<>();
+        List<Chicken> chickenCoop3 = new LinkedList<>();
+        List<Chicken> chickenCoop4 = new LinkedList<>();
+
+        Chicken chicken = new Chicken();
+
+        chickenCoop1.add(chicken);
+        chickenCoop1.add(chicken);
+        chickenCoop1.add(chicken);
+        chickenCoop1.add(chicken);
+
+        chickenCoop2.add(chicken);
+        chickenCoop2.add(chicken);
+        chickenCoop2.add(chicken);
+        chickenCoop2.add(chicken);
+
+        chickenCoop3.add(chicken);
+        chickenCoop3.add(chicken);
+        chickenCoop3.add(chicken);
+        chickenCoop3.add(chicken);
+
+        chickenCoop4.add(chicken);
+        chickenCoop4.add(chicken);
+        chickenCoop4.add(chicken);
+
+        List<Horse> stable1 = new LinkedList<>();
+        List<Horse> stable2 = new LinkedList<>();
+        List<Horse> stable3 = new LinkedList<>();
+
+        Horse horse = new Horse();
+
+        stable1.add(horse);
+        stable1.add(horse);
+        stable1.add(horse);
+
+        stable2.add(horse);
+        stable2.add(horse);
+        stable2.add(horse);
+
+        stable3.add(horse);
+        stable3.add(horse);
+        stable3.add(horse);
+        stable3.add(horse);
+
+        System.out.println("-------------------------");
+        System.out.println(chickenCoop1);
+        System.out.println(chickenCoop2);
+        System.out.println(chickenCoop3);
+        System.out.println(chickenCoop4);
+
+        System.out.println(stable1);
+        System.out.println(stable2);
+        System.out.println(stable3);
+
+        System.out.println("-------------------------");
+
+        Tractor tractor = new Tractor();
+        CropDuster cropDuster = new CropDuster();
+
+        Farmer froilan = new Farmer("Froilan");
+        Farmer froilanda = new Farmer("Froilanda");
+
+        List<Person> farmers = new LinkedList<>();
+        farmers.add(froilan);
+        farmers.add(froilanda);
+
+        FarmHouse farmHouse = new FarmHouse(farmers);
+
+       // Field field = new Field((List<CropRow>) cropRow1);
+
+       // Farm farm = new Farm(farmHouse, cropRow1, stable1, chickenCoop1);
+
+        //tractor.operate(new Farm);
+
+
+
+
+
+
+
+
+
+        froilanda.setVehicle(cropDuster);
+        froilanda.mount(cropDuster);
+        cropDuster.fly();
+        cropDuster.makeNoise();
+
+        froilan.setVehicle(tractor);
+        froilan.mount(tractor);
+        tractor.makeNoise();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
     }
 
-}
+
