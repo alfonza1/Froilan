@@ -23,4 +23,26 @@ public abstract class Person implements NoiseMaker, Eater, Rider {
         this.name = name;
 
     }
+
 }
+
+
+    @Override
+    public void makeNoise() {
+
+    }
+
+    @Override
+    public void mount(Rideable rideable) {
+
+        System.out.println("mounted!");
+
+    }
+
+    @Override
+    public void dismount(Rideable rideable) {
+        System.out.println("dismounted!");
+
+    }
+}
+
