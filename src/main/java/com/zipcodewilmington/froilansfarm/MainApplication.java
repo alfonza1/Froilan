@@ -1,6 +1,7 @@
 package com.zipcodewilmington.froilansfarm;
 
 import classes.*;
+import interfaces.Aircraft;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -120,18 +121,18 @@ public class MainApplication {
         Tractor tractor = new Tractor();
         CropDuster cropDuster = new CropDuster();
 
-        Farmer farmer1 = new Farmer("Froilan");
-        Farmer farmer2 = new Farmer("Froilanda");
+        Farmer froilan = new Farmer("Froilan");
+        Farmer froilanda = new Farmer("Froilanda");
 
         List<Person> farmers = new LinkedList<>();
-        farmers.add(farmer1);
-        farmers.add(farmer2);
+        farmers.add(froilan);
+        farmers.add(froilanda);
 
         FarmHouse farmHouse = new FarmHouse(farmers);
 
-        Field field = new Field((List<CropRow>) cropRow1);
+       // Field field = new Field((List<CropRow>) cropRow1);
 
-        //Farm farm = new Farm(farmHouse, cropRow1, stable1, chickenCoop1);
+       // Farm farm = new Farm(farmHouse, cropRow1, stable1, chickenCoop1);
 
         //tractor.operate(new Farm);
 
@@ -140,6 +141,54 @@ public class MainApplication {
 
 
 
+
+
+
+        froilanda.setVehicle(cropDuster);
+        froilanda.mount(cropDuster);
+        cropDuster.fly();
+        cropDuster.makeNoise();
+
+        froilan.setVehicle(tractor);
+        froilan.mount(tractor);
+        tractor.makeNoise();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
-}
+
