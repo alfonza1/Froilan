@@ -19,4 +19,9 @@ public class Horse extends Animal implements Rideable {
     public void canEat() {
 
     }
+
+    @Override
+    public String toString() {
+        return "Horse";
+    }
 }
