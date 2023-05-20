@@ -4,6 +4,7 @@ import classes.*;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Arrays;
 
 /**
  * Created by leon on 2/26/18.
@@ -60,8 +61,50 @@ public class MainApplication {
         cropRow4.yield();
         cropRow5.yield();
 
+        int Chicken[] = new int[15];
 
+        for (int i = 0; i < Chicken.length; i++){
+
+            Chicken[i] = i+1;
+
+        }
+
+        boolean run = true;
+
+        while(run = true){
+
+            int equal = 0;
+
+            for (int each : Chicken){
+
+                if (){
+
+                    ChickenCoop.addChick();
+
+                } else if () {
+
+                    ChickenCoop.addChick();
+
+                } else if () {
+
+                    ChickenCoop.addChick();
+
+                } else if () {
+
+                    ChickenCoop.addChick();
+
+                } else {
+                    
+                    equal = equal + 1;
+                }
+
+
+            }
+
+        }
 
     }
 
 }
+
+
