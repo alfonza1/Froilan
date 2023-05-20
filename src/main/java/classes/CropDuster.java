@@ -17,7 +17,7 @@ public class CropDuster extends Vehicle implements Aircraft, FarmVehicle {
     }
 
     @Override
-    public void fertilizer(CropRow cropRow) {
+    public void fertilize(CropRow cropRow) {
 
     }
 }

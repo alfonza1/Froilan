@@ -1,6 +1,8 @@
 package classes;
 
 import classes.Person;
+import interfaces.Edible;
+import interfaces.Rideable;
 import interfaces.Rider;
 
 public class Pilot extends Person implements Rider {
@@ -8,4 +10,23 @@ public class Pilot extends Person implements Rider {
         super(name);
     }
 
+    @Override
+    public void eat(Edible edible) {
+
+    }
+
+    @Override
+    public void makeNoise() {
+
+    }
+
+    @Override
+    public void mount(Rideable rideable) {
+
+    }
+
+    @Override
+    public void dismount(Rideable rideable) {
+
+    }
 }

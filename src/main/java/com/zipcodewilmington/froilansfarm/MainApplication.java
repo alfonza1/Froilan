@@ -129,7 +129,7 @@ public class MainApplication {
 
         FarmHouse farmHouse = new FarmHouse(farmers);
 
-        Field field = new Field((List<CropRow>) cropRow1);
+       // Field field = new Field((List<CropRow>) cropRow1);
 
         //Farm farm = new Farm(farmHouse, cropRow1, stable1, chickenCoop1);
 

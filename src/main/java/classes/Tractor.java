@@ -1,6 +1,10 @@
 package classes;
 
+import interfaces.Edible;
 import interfaces.FarmVehicle;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Tractor extends Vehicle implements FarmVehicle {
 
@@ -11,7 +15,10 @@ public class Tractor extends Vehicle implements FarmVehicle {
     }
 
     @Override
-    public void fertilizer(CropRow cropRow) {
+    public void fertilize(CropRow cropRow) {
 
     }
+
+
 }
+
