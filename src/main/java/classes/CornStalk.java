@@ -6,4 +6,10 @@ public class CornStalk extends Crop {
 
         return false;
     }
+
+    public void harvest(){
+        new Corn();
+    }
+
+
 }
