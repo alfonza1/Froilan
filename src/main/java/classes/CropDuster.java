@@ -6,18 +6,40 @@ import interfaces.FarmVehicle;
 public class CropDuster extends Vehicle implements Aircraft, FarmVehicle {
 
 
+
+
+
+
     @Override
     public void fly() {
 
+        System.out.println("I am flyingggg");
+
+
     }
+
+
 
     @Override
     public void operate(Farm farm) {
+        System.out.println("Flying over the farm");
 
     }
 
     @Override
-    public void fertilizer(CropRow cropRow) {
+    public void fertilize(CropRow cropRow) {
+
+        cropRow.fertilize();
 
     }
+
+    @Override
+    public void makeNoise() {
+        System.out.println("whooooooo zinggg whoooo");
+    }
+
+
+
+
+
 }

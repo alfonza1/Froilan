@@ -1,6 +1,9 @@
 package classes;
 
+import interfaces.Edible;
 import interfaces.Produce;
+
+import java.util.List;
 
 public class Chicken extends Animal implements Produce {
     private boolean hasBeenFertilized;
@@ -29,7 +32,12 @@ public class Chicken extends Animal implements Produce {
     }
 
     @Override
-    public void canEat() {
+    public void eat(Edible edible) {
+
+    }
+
+    @Override
+    public void eat(List<Edible> edible) {
 
     }
 
