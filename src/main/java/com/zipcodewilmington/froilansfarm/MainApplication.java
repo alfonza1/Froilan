@@ -49,6 +49,7 @@ public class MainApplication {
         CropRow cropRow4 = new CropRow(crop4);
         CropRow cropRow5 = new CropRow(crop5);
 
+
 //        System.out.println(cropRow1.getCrops());
 //        System.out.println(cropRow2.getCrops());
 //        System.out.println(cropRow3.getCrops());
@@ -144,6 +145,8 @@ public class MainApplication {
 
 
 
+
+
         froilanda.setVehicle(cropDuster);
         froilanda.mount(cropDuster);
         cropDuster.fly();
@@ -152,6 +155,8 @@ public class MainApplication {
         froilan.setVehicle(tractor);
         froilan.mount(tractor);
         tractor.makeNoise();
+
+
 
 
 

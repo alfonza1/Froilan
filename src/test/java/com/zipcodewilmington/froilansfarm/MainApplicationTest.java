@@ -1,5 +1,6 @@
 package com.zipcodewilmington.froilansfarm;
 import classes.*;
+import enums.DaysOfTheWeek;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -12,6 +13,7 @@ public class MainApplicationTest {
     void testFarmerPlantCrops() {
         // Create a Farmer object
         Farmer froilan = new Farmer("Froilan");
+
 
         // Create CropRows
         CropRow cropRow1 = new CropRow();
@@ -34,7 +36,7 @@ public class MainApplicationTest {
         assertTrue(cropRow3.containsCrop(potatoRoot));
     }
 
-    
+
 
     @Test  //Monday Test
       public void testCropDusterFertilizeCropRows() {
