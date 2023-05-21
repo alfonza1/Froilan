@@ -5,6 +5,8 @@ import interfaces.Edible;
 import interfaces.Rideable;
 import interfaces.Rider;
 
+import java.util.List;
+
 public class Pilot extends Person implements Rider {
 
     public Pilot(String name) {
@@ -14,6 +16,11 @@ public class Pilot extends Person implements Rider {
 
     @Override
     public void eat(Edible edible) {
+
+    }
+
+    @Override
+    public void eat(List<Edible> edible) {
 
     }
 
