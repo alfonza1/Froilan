@@ -21,7 +21,7 @@ public class CropDuster extends Vehicle implements Aircraft, FarmVehicle {
 
 
     @Override
-    public void operate(Farm farm) {
+    public void operate(CropRow cropRow) {
         System.out.println("Flying over the farm");
 
     }

@@ -8,6 +8,9 @@ import java.util.List;
 
 public class CropRow {
     private List<Crop> crops = new LinkedList<>();
+    List<Edible> bucket = new ArrayList<>();
+
+
 
         private boolean fertilized;
 
@@ -49,7 +52,7 @@ public class CropRow {
     }
 
     public void yield() {
-        List<Edible> bucket = new ArrayList<>();
+//        List<Edible> bucket = new ArrayList<>();
         for (Crop crop : crops) {
             if (crop.toString().equals("CornStalk")) {
                 //crops.remove(crop);
@@ -65,5 +68,9 @@ public class CropRow {
             }
         }
         System.out.println(bucket);
+    }
+
+    public List<Edible> getBucket() {
+        return bucket;
     }
 }
