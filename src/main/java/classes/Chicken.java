@@ -1,5 +1,6 @@
 package classes;
 
+import interfaces.Edible;
 import interfaces.Produce;
 
 public class Chicken extends Animal implements Produce {
@@ -29,7 +30,7 @@ public class Chicken extends Animal implements Produce {
     }
 
     @Override
-    public void canEat() {
+    public void eat(Edible edible) {
 
     }
 

@@ -2,14 +2,16 @@ package com.zipcodewilmington.froilansfarm;
 import classes.*;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
+import classes.Horse;
 
 /**
  * Created by leon on 2/26/18.
  */
 public class MainApplicationTest {
 
+
     @Test //sunday
-    void testFarmerPlantCrops() {
+    void SundayTest() {
         // Create a Farmer object
         Farmer froilan = new Farmer("Froilan");
 
@@ -37,7 +39,7 @@ public class MainApplicationTest {
     
 
     @Test  //Monday Test
-      public void testCropDusterFertilizeCropRows() {
+      public void MondayTest() {
             // Create a CropDuster object
             CropDuster cropDuster = new CropDuster();
 
