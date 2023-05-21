@@ -12,7 +12,7 @@ public class Tractor extends Vehicle implements FarmVehicle {
     }
 
     @Override
-    public void fertilizer(CropRow cropRow) {
+    public void fertilize(CropRow cropRow) {
 
     }
 
