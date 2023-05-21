@@ -3,7 +3,6 @@ package classes;
 import interfaces.Edible;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -27,7 +26,10 @@ public class CropRow {
 
 
 
+    public boolean containsCrop(Crop crop){
 
+        return true;
+    }
 
 
 
