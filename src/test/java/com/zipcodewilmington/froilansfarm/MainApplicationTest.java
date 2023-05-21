@@ -1,6 +1,5 @@
 package com.zipcodewilmington.froilansfarm;
-import classes.CropDuster;
-import classes.CropRow;
+import classes.*;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -9,7 +8,35 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 public class MainApplicationTest {
 
-        @Test  //Monday Test
+    @Test //sunday
+    void testFarmerPlantCrops() {
+        // Create a Farmer object
+        Farmer froilan = new Farmer("Froilan");
+
+        // Create CropRows
+        CropRow cropRow1 = new CropRow();
+        CropRow cropRow2 = new CropRow();
+        CropRow cropRow3 = new CropRow();
+
+        // Create different types of crops
+        Crop cornStalk = new CornStalk();
+        Crop tomatoPlant = new TomatoPlant();
+        Crop potatoRoot = new PotatoRoot();
+
+        // Plant crops in the CropRows
+        froilan.plant(cornStalk, cropRow1);
+        froilan.plant(tomatoPlant,cropRow2);
+        froilan.plant(potatoRoot, cropRow3);
+
+        // Assert that the crops have been planted in the respective CropRows
+        assertTrue(cropRow1.containsCrop(cornStalk));
+        assertTrue(cropRow2.containsCrop(tomatoPlant));
+        assertTrue(cropRow3.containsCrop(potatoRoot));
+    }
+
+    
+
+    @Test  //Monday Test
       public void testCropDusterFertilizeCropRows() {
             // Create a CropDuster object
             CropDuster cropDuster = new CropDuster();

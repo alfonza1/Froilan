@@ -10,7 +10,12 @@ public class Farmer extends Person implements Botanist {
 
 
     @Override
-    public void plant(Crop crow, CropRow cropRow) {
+    public void plant(Crop crop, CropRow cropRow) {
 
     }
+
+
+
+
+
 }
