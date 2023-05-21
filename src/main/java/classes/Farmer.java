@@ -23,6 +23,7 @@ public class Farmer extends Person implements Botanist {
     @Override
     public void eat(Edible edible) {
 
+
     }
 
     @Override
