@@ -1,5 +1,6 @@
 package classes;
 
+import interfaces.Edible;
 import interfaces.Rideable;
 
 public class Horse extends Animal implements Rideable {
@@ -16,12 +17,12 @@ public class Horse extends Animal implements Rideable {
 
 
     @Override
-    public void canEat() {
-
+    public String toString() {
+        return "Horse";
     }
 
     @Override
-    public String toString() {
-        return "Horse";
+    public void eat(Edible edible) {
+
     }
 }

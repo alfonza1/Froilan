@@ -1,5 +1,6 @@
 package classes;
 
+
 import interfaces.Eater;
 import interfaces.NoiseMaker;
 
@@ -7,8 +8,14 @@ import interfaces.Rideable;
 
 import interfaces.Rider;
 
-public abstract class Person implements NoiseMaker, Eater, Rider {
+import enums.DaysOfTheWeek;
+import interfaces.*;
 
+import java.util.List;
+
+
+public abstract class Person implements NoiseMaker, Eater, Rider {
+    private static DaysOfTheWeek day;
     private String name;
     private Vehicle vehicle;
 
@@ -32,26 +39,17 @@ public abstract class Person implements NoiseMaker, Eater, Rider {
         this.vehicle = vehicle;
     }
 
-    @Override
-    public void canEat() {
-
+    public String getDay() {
+        return "Today is " + Person.day;
     }
 
-    @Override
-    public void makeNoise() {
-
+    public static void setDay(DaysOfTheWeek day) {
+        Person.day = day;
     }
 
-    @Override
-    public void mount(Rideable rideable) {
+    public void feedAnimal(Animal animal, List<Edible> edible){
+    System.out.println(animal + "is eating" + edible);
+        animal.eat(edible);
+}
 
-        System.out.println("mounted!");
-
-    }
-
-    @Override
-    public void dismount(Rideable rideable) {
-        System.out.println("dismounted!");
-
-    }
 }
