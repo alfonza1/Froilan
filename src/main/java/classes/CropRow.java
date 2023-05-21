@@ -3,12 +3,39 @@ package classes;
 import interfaces.Edible;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
 public class CropRow {
     private List<Crop> crops = new LinkedList<>();
+
+        private boolean fertilized;
+
+        public CropRow() {
+            this.fertilized = false;
+        }
+
+        public void fertilize() {
+            this.fertilized = true;
+        }
+
+        public boolean isFertilized() {
+            return fertilized;
+        }
+
+
+
+
+    public boolean containsCrop(Crop crop){
+
+        return true;
+    }
+
+
+
+
+
+
 
     public CropRow(List<Crop> crops) {
         this.crops = crops;

@@ -1,6 +1,7 @@
 package com.zipcodewilmington.froilansfarm;
 
 import classes.*;
+import enums.DaysOfTheWeek;
 import interfaces.Aircraft;
 
 import java.util.LinkedList;
@@ -56,11 +57,11 @@ public class MainApplication {
         CropRow cropRow4 = new CropRow(crop4);
         CropRow cropRow5 = new CropRow(crop5);
 
-//        System.out.println(cropRow1.getCrops());
-//        System.out.println(cropRow2.getCrops());
-//        System.out.println(cropRow3.getCrops());
-//        System.out.println(cropRow4.getCrops());
-//        System.out.println(cropRow5.getCrops());
+        System.out.println(cropRow1.getCrops());
+        System.out.println(cropRow2.getCrops());
+        System.out.println(cropRow3.getCrops());
+        System.out.println(cropRow4.getCrops());
+        System.out.println(cropRow5.getCrops());
 
         cropRow1.yield();
         cropRow2.yield();
@@ -129,7 +130,14 @@ public class MainApplication {
         CropDuster cropDuster = new CropDuster();
 
         Farmer froilan = new Farmer("Froilan");
-        Farmer froilanda = new Farmer("Froilanda");
+        Pilot froilanda = new Pilot("Froilanda");
+
+
+
+
+
+
+
 
         List<Person> farmers = new LinkedList<>();
         farmers.add(froilan);
@@ -137,11 +145,7 @@ public class MainApplication {
 
         FarmHouse farmHouse = new FarmHouse(farmers);
 
-       // Field field = new Field((List<CropRow>) cropRow1);
 
-       // Farm farm = new Farm(farmHouse, cropRow1, stable1, chickenCoop1);
-
-        //tractor.operate(new Farm);
 
 
 
@@ -160,8 +164,9 @@ public class MainApplication {
         froilan.mount(tractor);
         tractor.makeNoise();
 
-
-
+        Person.setDay(DaysOfTheWeek.Monday);
+        System.out.println(froilan.getDay());
+        System.out.println(froilanda.getDay());
 
 
 
