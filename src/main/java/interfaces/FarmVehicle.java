@@ -5,5 +5,7 @@ import classes.Farm;
 public interface FarmVehicle {
 
     void operate(Farm farm);
-    void fertilize(CropRow cropRow);
+
+   void fertilize(CropRow cropRow);
+
 }
