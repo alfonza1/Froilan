@@ -50,11 +50,20 @@ public class MainApplication {
         CropRow cropRow4 = new CropRow(crop4);
         CropRow cropRow5 = new CropRow(crop5);
 
+
+
+//        System.out.println(cropRow1.getCrops());
+//        System.out.println(cropRow2.getCrops());
+//        System.out.println(cropRow3.getCrops());
+//        System.out.println(cropRow4.getCrops());
+//        System.out.println(cropRow5.getCrops());
+
         System.out.println(cropRow1.getCrops());
         System.out.println(cropRow2.getCrops());
         System.out.println(cropRow3.getCrops());
         System.out.println(cropRow4.getCrops());
         System.out.println(cropRow5.getCrops());
+
 
         cropRow1.yield();
         cropRow2.yield();
@@ -137,6 +146,8 @@ public class MainApplication {
         farmers.add(froilanda);
 
         FarmHouse farmHouse = new FarmHouse(farmers);
+
+
 
 
 

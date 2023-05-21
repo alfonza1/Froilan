@@ -13,9 +13,11 @@ public class CropRow {
 
 
         private boolean fertilized;
+    private boolean harvest;
 
         public CropRow() {
             this.fertilized = false;
+            this.harvest = false;
         }
 
         public void fertilize() {
@@ -25,6 +27,18 @@ public class CropRow {
         public boolean isFertilized() {
             return fertilized;
         }
+
+
+        public void harvest(){
+            this.harvest = true;
+        }
+
+
+        public boolean isHarvested() {
+        return harvest;
+    }
+
+
 
 
 
