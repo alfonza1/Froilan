@@ -62,7 +62,7 @@ public class MainApplicationTest {
         }
 
     @Test
-    void testTractorHarvestCropRows() {
+    void TuesdayTest() {
         // Create a Tractor object
         Tractor tractor = new Tractor();
 
