@@ -32,6 +32,11 @@ public class Chicken extends Animal implements Produce {
     public void canEat() {
 
     }
+
+    @Override
+    public String toString() {
+        return "Chicken";
+    }
 }
 
 

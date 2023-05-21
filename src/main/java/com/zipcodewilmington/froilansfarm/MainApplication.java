@@ -49,11 +49,11 @@ public class MainApplication {
         CropRow cropRow4 = new CropRow(crop4);
         CropRow cropRow5 = new CropRow(crop5);
 
-        System.out.println(cropRow1.getCrops());
-        System.out.println(cropRow2.getCrops());
-        System.out.println(cropRow3.getCrops());
-        System.out.println(cropRow4.getCrops());
-        System.out.println(cropRow5.getCrops());
+//        System.out.println(cropRow1.getCrops());
+//        System.out.println(cropRow2.getCrops());
+//        System.out.println(cropRow3.getCrops());
+//        System.out.println(cropRow4.getCrops());
+//        System.out.println(cropRow5.getCrops());
 
         cropRow1.yield();
         cropRow2.yield();
@@ -61,30 +61,85 @@ public class MainApplication {
         cropRow4.yield();
         cropRow5.yield();
 
-        Chicken[] chick = new Chicken[15];
+        List<Chicken> chickenCoop1 = new LinkedList<>();
+        List<Chicken> chickenCoop2 = new LinkedList<>();
+        List<Chicken> chickenCoop3 = new LinkedList<>();
+        List<Chicken> chickenCoop4 = new LinkedList<>();
 
-        for (int i = 0; i < chick.length; i++){
+        Chicken chicken = new Chicken();
 
-            chick[i] = new Chicken();
+        chickenCoop1.add(chicken);
+        chickenCoop1.add(chicken);
+        chickenCoop1.add(chicken);
+        chickenCoop1.add(chicken);
 
-        }
+        chickenCoop2.add(chicken);
+        chickenCoop2.add(chicken);
+        chickenCoop2.add(chicken);
+        chickenCoop2.add(chicken);
 
-        LinkedList<Chicken> coopOne = new LinkedList<>();
-        LinkedList<Chicken> coopTwo = new LinkedList<>();
-        LinkedList<Chicken> coopThree = new LinkedList<>();
-        LinkedList<Chicken> coopFour = new LinkedList<>();
+        chickenCoop3.add(chicken);
+        chickenCoop3.add(chicken);
+        chickenCoop3.add(chicken);
+        chickenCoop3.add(chicken);
+
+        chickenCoop4.add(chicken);
+        chickenCoop4.add(chicken);
+        chickenCoop4.add(chicken);
+
+        List<Horse> stable1 = new LinkedList<>();
+        List<Horse> stable2 = new LinkedList<>();
+        List<Horse> stable3 = new LinkedList<>();
+
+        Horse horse = new Horse();
+
+        stable1.add(horse);
+        stable1.add(horse);
+        stable1.add(horse);
+
+        stable2.add(horse);
+        stable2.add(horse);
+        stable2.add(horse);
+
+        stable3.add(horse);
+        stable3.add(horse);
+        stable3.add(horse);
+        stable3.add(horse);
+
+        System.out.println("-------------------------");
+        System.out.println(chickenCoop1);
+        System.out.println(chickenCoop2);
+        System.out.println(chickenCoop3);
+        System.out.println(chickenCoop4);
+
+        System.out.println(stable1);
+        System.out.println(stable2);
+        System.out.println(stable3);
+
+        System.out.println("-------------------------");
+
+        Tractor tractor = new Tractor();
+        CropDuster cropDuster = new CropDuster();
+
+        Pilot pilot = new Pilot("Froilanda");
+        List<Person> Pilot = new LinkedList<>();
+        Pilot.add(pilot);
+
+        Farmer farmer = new Farmer("Froilan");
+        List<Person> Farmer = new LinkedList<>();
+        Farmer.add(farmer);
 
 
-        ChickenCoop[] coops = new ChickenCoop[4];
-        coops[0] = new ChickenCoop(List.of(new Chicken[]{chick[0], chick[1], chick[2], chick[3]}));
-        coops[1] = new ChickenCoop(List.of(new Chicken[]{chick[5], chick[6], chick[7], chick[8]}));
-        coops[2] = new ChickenCoop(List.of(new Chicken[]{chick[10], chick[11], chick[12], chick[13]}));
-        coops[3] = new ChickenCoop(List.of(new Chicken[]{chick[4], chick[9], chick[14]}));
+        FarmHouse farmHouse = new FarmHouse(Farmer);
 
+        //Field field = new Field((List<CropRow>) cropRow1);
 
-            }
+        //Farm farm = new Farm(farmHouse, cropRow1, stable1, chickenCoop1);
 
-        }
+        //tractor.operate(new Farm);
+
+    }
+}
 
 
 
