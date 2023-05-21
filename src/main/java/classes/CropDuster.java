@@ -6,12 +6,19 @@ import interfaces.FarmVehicle;
 public class CropDuster extends Vehicle implements Aircraft, FarmVehicle {
 
 
+
+
+
+
     @Override
     public void fly() {
 
         System.out.println("I am flyingggg");
 
+
     }
+
+
 
     @Override
     public void operate(Farm farm) {
@@ -22,7 +29,7 @@ public class CropDuster extends Vehicle implements Aircraft, FarmVehicle {
     @Override
     public void fertilize(CropRow cropRow) {
 
-        System.out.println();
+        cropRow.fertilize();
 
     }
 
@@ -30,4 +37,9 @@ public class CropDuster extends Vehicle implements Aircraft, FarmVehicle {
     public void makeNoise() {
         System.out.println("whooooooo zinggg whoooo");
     }
+
+
+
+
+
 }

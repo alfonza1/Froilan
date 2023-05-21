@@ -12,9 +12,10 @@ public class Farmer extends Person implements Botanist {
 
 
     @Override
-    public void plant(Crop crow, CropRow cropRow) {
+    public void plant(Crop crop, CropRow cropRow) {
 
     }
+
 
 
     @Override
@@ -36,5 +37,6 @@ public class Farmer extends Person implements Botanist {
     public void dismount(Rideable rideable) {
 
     }
+
 
 }
