@@ -1,4 +1,5 @@
-package classes;
+package people;
+
 
 
 import interfaces.Eater;
@@ -7,6 +8,9 @@ import interfaces.NoiseMaker;
 
 import interfaces.Rideable;
 import interfaces.Rider;
+
+import animals.Animal;
+import vehicles.Vehicle;
 
 import enums.DaysOfTheWeek;
 import interfaces.*;
@@ -61,8 +65,9 @@ public abstract class Person implements NoiseMaker, Eater, Rider {
     }
 
     public void feedAnimal(Animal animal, List<Edible> edible){
-    System.out.println(animal + " is eating " + edible);
 
+    System.out.println("Now feeding " + edible + " to " + animal);
+    
     }
 
     public boolean hasAte(){

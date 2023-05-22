@@ -1,5 +1,7 @@
-package classes;
+package people;
 
+import farm.Crop;
+import farm.CropRow;
 import interfaces.Botanist;
 import interfaces.Edible;
 import interfaces.Rideable;
@@ -22,7 +24,7 @@ private boolean mounted;
     @Override
     public void plant(Crop crop, CropRow cropRow) {
         System.out.println(getName() + " is adding "+ crop + " to " + cropRow);
-    cropRow.add(crop);
+   cropRow.add(crop);
     }
 
 
@@ -54,14 +56,14 @@ private boolean mounted;
 
     @Override
     public void mount(Rideable rideable) {
-        System.out.println("Mounting " + rideable);
+        System.out.println(getName() + " is mounting " + rideable);
         mounted = true;
     }
 
     @Override
     public void dismount(Rideable rideable) {
 if(mounted == true){
-    System.out.println("Dismounting " + rideable);
+    System.out.println(getName() + " is dismounting " + rideable);
     mounted = false;
 }
 else{

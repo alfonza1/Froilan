@@ -1,4 +1,6 @@
-package classes;
+package buildings;
+
+import animals.Chicken;
 
 import java.util.LinkedList;
 
