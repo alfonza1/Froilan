@@ -26,7 +26,7 @@ public abstract class Animal implements NoiseMaker, Eater {
 
     @Override
     public void eat(List<Edible> edible) {
-        System.out.println(getClass().getSimpleName() + " is eating" + edible.toString());
+        System.out.println(getClass().getSimpleName() + " is eating " + edible.toString());
         this.edible = edible;
 
     }

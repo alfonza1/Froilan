@@ -33,5 +33,9 @@ public class Tractor extends Vehicle implements FarmVehicle {
         System.out.println("Skirrttttt skirtttt");
     }
 
+    @Override
+    public String toString() {
+        return "Tractor";
+    }
 }
 

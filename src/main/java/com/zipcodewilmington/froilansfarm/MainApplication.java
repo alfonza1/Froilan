@@ -60,27 +60,19 @@ public class MainApplication {
         CropRow cropRow5 = new CropRow(crop5);
 
 
-
-            cropRow1.getCrops();
-            cropRow2.getCrops();
-            cropRow3.getCrops();
-            cropRow4.getCrops();
-            cropRow5.getCrops();
-
-
-
-
-            cropRow1.yield();
-            cropRow2.yield();
-            cropRow3.yield();
-            cropRow4.yield();
-            cropRow5.yield();
-
         System.out.println(cropRow1.getCrops());
         System.out.println(cropRow2.getCrops());
         System.out.println(cropRow3.getCrops());
         System.out.println(cropRow4.getCrops());
         System.out.println(cropRow5.getCrops());
+
+        cropRow1.yield();
+        cropRow2.yield();
+        cropRow3.yield();
+        cropRow4.yield();
+        cropRow5.yield();
+
+
 
         List<Chicken> chickenCoop1 = new LinkedList<>();
         List<Chicken> chickenCoop2 = new LinkedList<>();

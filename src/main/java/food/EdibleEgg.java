@@ -7,6 +7,6 @@ public class EdibleEgg implements Edible, Produce {
 
     @Override
     public String toString() {
-        return "EdibleEgg";
+        return "Edible Egg";
     }
 }

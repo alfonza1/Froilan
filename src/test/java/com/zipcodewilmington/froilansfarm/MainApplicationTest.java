@@ -13,6 +13,7 @@ import animals.Horse;
 import vehicles.CropDuster;
 import vehicles.Tractor;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -42,6 +43,8 @@ public class MainApplicationTest {
         corns.add(corn);
 
         froilan.feedAnimal(horse,corns);
+        horse.eat(corns);
+
 
 
         froilan.dismount(horse);
@@ -137,12 +140,17 @@ public class MainApplicationTest {
     @Test
     void TuesdayTest() {
         // Create a Tractor object
+        //List<Edible> bucket = new ArrayList<>();
         Tractor tractor = new Tractor();
 
 
         Farmer froilan = new Farmer("Froilan");
+
         Pilot froilanda = new Pilot("Froilanda");
         Person.setDay(DaysOfTheWeek.Tuesday);
+
+
+
 
         // Create CropRows and crops
         CropRow cropRow1 = new CropRow();
@@ -150,9 +158,14 @@ public class MainApplicationTest {
         CropRow cropRow3 = new CropRow();
 
         // Harvest the crops using the Tractor
+
+        froilan.mount(tractor);
+
         tractor.harvest(cropRow1);
         tractor.harvest(cropRow2);
         tractor.harvest(cropRow3);
+
+        froilan.dismount(tractor);
 
         // Assert that the crops have been harvested
         assertTrue(cropRow1.isHarvested());
