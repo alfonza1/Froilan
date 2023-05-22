@@ -1,8 +1,10 @@
 package com.zipcodewilmington.froilansfarm;
+import enums.DaysOfTheWeek;
 import farm.Crop;
 import farm.CropRow;
 import food.*;
 import people.Farmer;
+import people.Person;
 import people.Pilot;
 import interfaces.Edible;
 import org.junit.jupiter.api.Test;
@@ -43,6 +45,7 @@ public class MainApplicationTest {
         froilan.feedAnimal(horse,corns);
         horse.eat(corns);
 
+
         froilan.dismount(horse);
 
         froilan.eat(corn);
@@ -74,6 +77,8 @@ public class MainApplicationTest {
     void SundayTest() {
         // Create a Farmer object
         Farmer froilan = new Farmer("Froilan");
+        Person.setDay(DaysOfTheWeek.Sunday);
+
 
 
         // Create CropRows
@@ -107,7 +112,7 @@ public class MainApplicationTest {
 
 
         Pilot froilanda = new Pilot("Froilanda");
-
+        Person.setDay(DaysOfTheWeek.Monday);
 
 
             // Create CropRows and crops
@@ -139,8 +144,13 @@ public class MainApplicationTest {
 
 
         Farmer froilan = new Farmer("Froilan");
+<<<<<<< HEAD
         //Pilot froilanda = new Pilot("Froilanda");
 
+=======
+        Pilot froilanda = new Pilot("Froilanda");
+        Person.setDay(DaysOfTheWeek.Tuesday);
+>>>>>>> master
 
         // Create CropRows and crops
         CropRow cropRow1 = new CropRow();

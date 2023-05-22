@@ -24,7 +24,7 @@ private boolean mounted;
     @Override
     public void plant(Crop crop, CropRow cropRow) {
         System.out.println(getName() + " is adding "+ crop + " to " + cropRow);
-    cropRow.add(crop);
+   cropRow.add(crop);
     }
 
 

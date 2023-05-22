@@ -42,8 +42,13 @@ public abstract class Person implements NoiseMaker, Eater, Rider {
     }
 
     public void feedAnimal(Animal animal, List<Edible> edible){
+<<<<<<< HEAD
     System.out.println("Now feeding the " + animal + " " + edible);
 
+=======
+    System.out.println(animal + " is eating " + edible);
+    animal.eat(edible);
+>>>>>>> master
     }
 
     public boolean hasAte(){

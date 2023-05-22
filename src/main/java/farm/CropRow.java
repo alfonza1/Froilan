@@ -15,40 +15,40 @@ public class CropRow {
     private boolean harvest;
 
 
-        public CropRow() {
-            this.fertilized = false;
-            this.harvest = false;
-        }
+    public CropRow() {
+        this.fertilized = false;
+        this.harvest = false;
+    }
 
     public CropRow(List<Crop> crops) {
 
-       this.crops = crops;
+        this.crops = crops;
     }
 
 
     public void add(Crop crop){
-            crops.add(crop);
+        crops.add(crop);
 
 
     }
 
-        public void fertilize() {
-            this.fertilized = true;
-        }
+    public void fertilize() {
+        this.fertilized = true;
+    }
 
-        public boolean isFertilized() {
-            return fertilized;
-        }
+    public boolean isFertilized() {
+        return fertilized;
+    }
 
-        public void harvest(){
-            this.harvest = true;
-        }
+    public void harvest(){
+        this.harvest = true;
+    }
 
-        public boolean isHarvested() {
+    public boolean isHarvested() {
         return harvest;
-        }
+    }
 
-        public boolean containsCrop(Crop crop){
+    public boolean containsCrop(Crop crop){
 
         return true;
     }
@@ -77,7 +77,7 @@ public class CropRow {
                 bucket.add(new Pineapple());
             }
         }
-        System.out.println(bucket);
+
     }
 
 //    public void getBucket() {
