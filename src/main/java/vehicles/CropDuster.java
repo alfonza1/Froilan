@@ -1,5 +1,6 @@
-package classes;
+package vehicles;
 
+import farm.CropRow;
 import interfaces.Aircraft;
 import interfaces.FarmVehicle;
 
@@ -33,6 +34,8 @@ public class CropDuster extends Vehicle implements Aircraft, FarmVehicle {
 
     @Override
     public void harvest(CropRow cropRow) {
+        cropRow.harvest();
+        cropRow.yield();
 
     }
 

@@ -1,12 +1,12 @@
-package classes;
+package food;
 
 import interfaces.Edible;
 import interfaces.Produce;
 
-public class Pineapple implements Edible, Produce {
+public class Potato implements Edible, Produce {
 
     @Override
     public String toString() {
-        return "Pineapple";
+        return "Potato";
     }
 }

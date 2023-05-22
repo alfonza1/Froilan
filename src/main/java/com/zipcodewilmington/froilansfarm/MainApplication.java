@@ -1,12 +1,20 @@
 package com.zipcodewilmington.froilansfarm;
 
-import classes.*;
+import animals.Chicken;
+import animals.Horse;
+import buildings.FarmHouse;
+import farm.Crop;
+import farm.CropRow;
+import food.*;
+import people.Farmer;
+import people.Person;
+import people.Pilot;
 import enums.DaysOfTheWeek;
-import interfaces.Aircraft;
+import vehicles.CropDuster;
+import vehicles.Tractor;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Arrays;
 
 /**
  * Created by leon on 2/26/18.
@@ -52,27 +60,11 @@ public class MainApplication {
         CropRow cropRow5 = new CropRow(crop5);
 
 
-
         System.out.println(cropRow1.getCrops());
         System.out.println(cropRow2.getCrops());
         System.out.println(cropRow3.getCrops());
         System.out.println(cropRow4.getCrops());
         System.out.println(cropRow5.getCrops());
-
-
-
-//        System.out.println(cropRow1.getCrops());
-//        System.out.println(cropRow2.getCrops());
-//        System.out.println(cropRow3.getCrops());
-//        System.out.println(cropRow4.getCrops());
-//        System.out.println(cropRow5.getCrops());
-
-        System.out.println(cropRow1.getCrops());
-        System.out.println(cropRow2.getCrops());
-        System.out.println(cropRow3.getCrops());
-        System.out.println(cropRow4.getCrops());
-        System.out.println(cropRow5.getCrops());
-
 
         cropRow1.yield();
         cropRow2.yield();
@@ -151,12 +143,6 @@ public class MainApplication {
         Farmer froilan = new Farmer("Froilan");
         Pilot froilanda = new Pilot("Froilanda");
 
-
-
-
-
-
-
         List<Person> farmers = new LinkedList<>();
         farmers.add(froilan);
         farmers.add(froilanda);
@@ -164,7 +150,18 @@ public class MainApplication {
 
         FarmHouse farmHouse = new FarmHouse(farmers);
 
+        froilanda.setVehicle(cropDuster);
+        froilanda.mount(cropDuster);
+        cropDuster.fly();
+        cropDuster.makeNoise();
 
+        froilan.setVehicle(tractor);
+        froilan.mount(tractor);
+        tractor.makeNoise();
+
+        Person.setDay(DaysOfTheWeek.Monday);
+        System.out.println(froilan.getDay());
+        System.out.println(froilanda.getDay());
 
         froilanda.setVehicle(cropDuster);
         froilanda.mount(cropDuster);
@@ -183,39 +180,12 @@ public class MainApplication {
 
 
 
+        }
 
 
 
 
-
-
-
-        froilanda.setVehicle(cropDuster);
-        froilanda.mount(cropDuster);
-        cropDuster.fly();
-        cropDuster.makeNoise();
-
-        froilan.setVehicle(tractor);
-        froilan.mount(tractor);
-        tractor.makeNoise();
-
-        Person.setDay(DaysOfTheWeek.Monday);
-        System.out.println(froilan.getDay());
-        System.out.println(froilanda.getDay());
-
-
-
-
-
-
-
-
-
-
-
-
-
-        } }
+}
 
 
 

@@ -1,6 +1,5 @@
-package classes;
+package people;
 
-import classes.Person;
 import interfaces.Edible;
 import interfaces.Rideable;
 import interfaces.Rider;
@@ -48,14 +47,14 @@ public class Pilot extends Person implements Rider {
 
     @Override
     public void mount(Rideable rideable) {
-        System.out.println("Mounting " + rideable);
+        System.out.println(getName() + " is mounting " + rideable);
         mounted = true;
     }
 
     @Override
     public void dismount(Rideable rideable) {
         if(mounted == true){
-            System.out.println("Dismounting " + rideable);
+            System.out.println(getName() + " is dismounting " + rideable);
 mounted = false;
         }
         else{

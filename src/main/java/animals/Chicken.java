@@ -1,5 +1,7 @@
-package classes;
+package animals;
 
+import animals.Animal;
+import food.EdibleEgg;
 import interfaces.Edible;
 import interfaces.Produce;
 import java.util.ArrayList;
