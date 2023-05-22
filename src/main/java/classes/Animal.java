@@ -4,13 +4,39 @@ import interfaces.Eater;
 import interfaces.Edible;
 import interfaces.NoiseMaker;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Animal implements NoiseMaker, Eater {
 
-    private boolean hasAte = false;
+
+    private List<Edible> edible;
+
 
     public Animal() {
+        this.edible = new ArrayList<>();
+    }
+
+
+    @Override
+    public void eat(Edible edible) {
+        this.edible.add(edible);
+    }
+
+    @Override
+    public void eat(List<Edible> edible) {
+        this.edible = edible;
+
+    }
+
+    public int ateAmount() {
+        int i = 0;
+        for(Edible edible: edible){
+            i++;
+
+        }
+        return i;
+
     }
 
     @Override
@@ -18,24 +44,10 @@ public abstract class Animal implements NoiseMaker, Eater {
 
 
     @Override
-    public void eat(List<Edible> edible) {
-        System.out.println("nom nom");
-    }
-
-    @Override
     public String toString() {
         return getClass().getSimpleName();
 
 
     }
-    public boolean hasAte(){
-        hasAte = true;
-        return hasAte;
 
-    @Override
-    public void eat(List<Edible> edible) {
-
-    System.out.println("nom nom");
-
-    }
 }

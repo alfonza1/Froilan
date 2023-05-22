@@ -13,8 +13,6 @@ public class CropRow {
 
         private boolean harvest;
 
-    private boolean harvest;
-
 
         public CropRow() {
             this.fertilized = false;

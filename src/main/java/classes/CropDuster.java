@@ -7,9 +7,6 @@ public class CropDuster extends Vehicle implements Aircraft, FarmVehicle {
 
 
 
-
-
-
     @Override
     public void fly() {
 

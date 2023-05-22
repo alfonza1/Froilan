@@ -24,6 +24,5 @@ public class Horse extends Animal implements Rideable {
     @Override
     public void eat(Edible edible) {
 
-        hasAte();
     }
 }

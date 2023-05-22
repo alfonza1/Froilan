@@ -1,25 +1,16 @@
 package com.zipcodewilmington.froilansfarm;
 import classes.*;
-import enums.DaysOfTheWeek;
-
-
 import interfaces.Edible;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import classes.Horse;
-
 import java.util.LinkedList;
-
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
-import classes.Horse;
-
+import java.util.List;
 
 /**
  * Created by leon on 2/26/18.
  */
 public class MainApplicationTest {
-
 
 
     @Test
@@ -35,7 +26,7 @@ public class MainApplicationTest {
 
         froilan.mount(horse);
 
-        LinkedList<Edible> corns = new LinkedList<>();
+        List<Edible> corns = new LinkedList<>();
 
         corns.add(corn);
         corns.add(corn);
@@ -62,13 +53,15 @@ public class MainApplicationTest {
         froilanda.eat(egg);
         froilanda.eat(egg);
 
-        assertTrue(froilan.hasAte());
-        assertTrue(froilanda.hasAte());
-        assertTrue(horse.hasAte());
-        assertEquals(8, froilan.ateAmount());
-        assertEquals(5, froilanda.ateAmount());
+        assertEquals(8,froilan.ateAmount());
+        assertEquals(5,froilanda.ateAmount());
+        assertEquals(3,horse.ateAmount());
 
     }
+
+
+
+
 
 
 
@@ -163,7 +156,6 @@ public class MainApplicationTest {
 
 
 
-    }
 
 
 
@@ -174,7 +166,8 @@ public class MainApplicationTest {
 
 
 
-}
+
+
 
 
 

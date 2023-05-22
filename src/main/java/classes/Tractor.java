@@ -32,23 +32,5 @@ public class Tractor extends Vehicle implements FarmVehicle {
         System.out.println("Skirrttttt skirtttt");
     }
 
-    }
-
-    @Override
-    public void fertilize(CropRow cropRow) {
-
-    }
-
-    @Override
-    public void harvest(CropRow cropRow) {
-        cropRow.harvest();
-    }
-
-
-    @Override
-    public void makeNoise() {
-        System.out.println("Skirrttttt skirtttt");
-    }
-
 }
 

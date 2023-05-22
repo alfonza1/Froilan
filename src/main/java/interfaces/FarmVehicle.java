@@ -15,8 +15,5 @@ public interface FarmVehicle {
 
 
 
-    void harvest(CropRow cropRow);
-
-
 
 }

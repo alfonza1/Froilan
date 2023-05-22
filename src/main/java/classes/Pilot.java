@@ -5,6 +5,7 @@ import interfaces.Edible;
 import interfaces.Rideable;
 import interfaces.Rider;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Pilot extends Person implements Rider {
@@ -15,20 +16,18 @@ public class Pilot extends Person implements Rider {
 
     public Pilot(String name) {
         super(name);
+        this.edible = new ArrayList<>();
     }
 
 
     @Override
     public void eat(Edible edible) {
-
         this.edible.add(edible);
         hasAte();
-
     }
 
     @Override
     public void eat(List<Edible> edible) {
-
         this.edible = edible;
 
     }
@@ -39,7 +38,6 @@ public class Pilot extends Person implements Rider {
 
         }
         return i;
-
 
     }
 

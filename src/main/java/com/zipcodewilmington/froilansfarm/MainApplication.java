@@ -151,9 +151,6 @@ public class MainApplication {
         Farmer froilan = new Farmer("Froilan");
         Pilot froilanda = new Pilot("Froilanda");
 
-        Farmer froilan = new Farmer("Froilan");
-        Pilot froilanda = new Pilot("Froilanda");
-
 
 
 
@@ -218,7 +215,7 @@ public class MainApplication {
 
 
 
-        }
+        } }
 
 
 
@@ -234,28 +231,5 @@ public class MainApplication {
 
 
 
-
-
-
-        //Field field = new Field((List<CropRow>) cropRow1);
-
-
-        froilanda.setVehicle(cropDuster);
-        froilanda.mount(cropDuster);
-        cropDuster.fly();
-        cropDuster.makeNoise();
-
-        froilan.setVehicle(tractor);
-        froilan.mount(tractor);
-        tractor.makeNoise();
-
-        Person.setDay(DaysOfTheWeek.Monday);
-        System.out.println(froilan.getDay());
-        System.out.println(froilanda.getDay());
-
-    }
-
-
-}
 
 
