@@ -164,6 +164,10 @@ public class MainApplicationTest {
 
 
 
+        // Add more test cases for other Monday-specific tasks
+
+
+
     @Test
     void TuesdayTest() {
         // Create a Tractor object
