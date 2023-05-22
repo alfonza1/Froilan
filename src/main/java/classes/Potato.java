@@ -1,8 +1,9 @@
 package classes;
 
 import interfaces.Edible;
+import interfaces.Produce;
 
-public class Potato implements Edible {
+public class Potato implements Edible, Produce {
 
     @Override
     public String toString() {

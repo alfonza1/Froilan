@@ -43,7 +43,7 @@ public class Pilot extends Person implements Rider {
 
     @Override
     public void makeNoise() {
-
+        System.out.println("hello there im finna fly");
     }
 
     @Override
