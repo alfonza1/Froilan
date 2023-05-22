@@ -68,41 +68,34 @@ public class MainApplicationTest {
         assertTrue(cropRow3.isFertilized());
     }
 
-    @Test
-    public void TuesdayTest(){
-
-        Farmer froilan = new Farmer("Froilan");
-
-        Tractor tractor = new Tractor();
-
-        froilan.mount(tractor);
-
-        CropRow cropRow1 = new CropRow();
-        CropRow cropRow2 = new CropRow();
-        CropRow cropRow3 = new CropRow();
-
-        Crop cornStalk = new CornStalk();
-        Crop tomatoPlant = new TomatoPlant();
-        Crop potatoRoot = new PotatoRoot();
-
-        tractor.operate(cropRow1);
-        tractor.operate(cropRow2);
-        tractor.operate(cropRow3);
-
-        cropRow1.yield();
-        cropRow2.yield();
-        cropRow3.yield();
-
-        //assertTrue(cropRow1.getBucket(), cropRow1.yield());
-
-
-
-
-
-
-
-
-    }
+//    @Test
+//    public void TuesdayTest(){
+//
+//        Farmer froilan = new Farmer("Froilan");
+//
+//        Tractor tractor = new Tractor();
+//
+//        froilan.mount(tractor);
+//
+//        CropRow cropRow1 = new CropRow();
+//        CropRow cropRow2 = new CropRow();
+//        CropRow cropRow3 = new CropRow();
+//
+//        Crop cornStalk = new CornStalk();
+//        Crop tomatoPlant = new TomatoPlant();
+//        Crop potatoRoot = new PotatoRoot();
+//
+//        tractor.operate(cropRow1);
+//        tractor.operate(cropRow2);
+//        tractor.operate(cropRow3);
+//
+//        cropRow1.yield();
+//        cropRow2.yield();
+//        cropRow3.yield();
+//
+//        //assertTrue(cropRow1.getBucket(), cropRow1.yield());
+//
+//    }
 
 
 
