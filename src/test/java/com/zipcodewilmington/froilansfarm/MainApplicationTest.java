@@ -149,7 +149,7 @@ public class MainApplicationTest {
         Pilot froilanda = new Pilot("Froilanda");
         Person.setDay(DaysOfTheWeek.Tuesday);
 
-        
+
 
 
         // Create CropRows and crops
