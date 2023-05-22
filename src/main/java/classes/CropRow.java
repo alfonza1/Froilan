@@ -22,6 +22,19 @@ public class CropRow {
             this.harvest = false;
         }
 
+    public CropRow(List<Crop> crops) {
+
+       this.crops = new LinkedList<>();
+    }
+
+
+    public void add(Crop crop){
+            crops.add(crop);
+
+
+    }
+
+
         public void fertilize() {
             this.fertilized = true;
         }
@@ -38,7 +51,7 @@ public class CropRow {
 
         public boolean isHarvested() {
         return harvest;
-    }
+        }
 
 
 
@@ -47,11 +60,6 @@ public class CropRow {
         return true;
     }
 
-
-
-    public CropRow(List<Crop> crops) {
-        this.crops = crops;
-    }
 
     public String getCrops() {
         for (Crop e : crops) {

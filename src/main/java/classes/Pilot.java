@@ -12,7 +12,7 @@ public class Pilot extends Person implements Rider {
 
 
     private List<Edible> edible;
-
+    private boolean mounted;
 
     public Pilot(String name) {
         super(name);
@@ -43,16 +43,24 @@ public class Pilot extends Person implements Rider {
 
     @Override
     public void makeNoise() {
-
+        System.out.println("hello there im finna fly");
     }
 
     @Override
     public void mount(Rideable rideable) {
-
+        System.out.println("Mounting" + rideable);
+        mounted = true;
     }
 
     @Override
     public void dismount(Rideable rideable) {
+        if(mounted == true){
+            System.out.println("Dismounting" + rideable);
+mounted = false;
+        }
+        else{
+            System.out.println("No ride to dismount brokie");
+        }
 
     }
 }

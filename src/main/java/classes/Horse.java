@@ -12,7 +12,7 @@ public class Horse extends Animal implements Rideable {
 
     @Override
     public void makeNoise() {
-
+        System.out.println("YEHEHEHEEEEE");
     }
 
 
@@ -21,8 +21,4 @@ public class Horse extends Animal implements Rideable {
         return "Horse";
     }
 
-    @Override
-    public void eat(Edible edible) {
-
-    }
 }
