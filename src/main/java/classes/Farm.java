@@ -5,7 +5,8 @@ import java.util.List;
 
 public class Farm {
 
-    private Farm farm;
+
+    
     private FarmHouse farmHouse;
     private Field field;
     private List<Stable> stable = new LinkedList<>();

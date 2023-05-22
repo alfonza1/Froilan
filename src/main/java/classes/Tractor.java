@@ -17,6 +17,8 @@ public class Tractor extends Vehicle implements FarmVehicle {
 
     @Override
     public void fertilize(CropRow cropRow) {
+        cropRow.fertilize();
+        System.out.println(cropRow + " has been fertilized");
 
     }
 
