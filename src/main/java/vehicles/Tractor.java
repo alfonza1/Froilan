@@ -1,10 +1,7 @@
-package classes;
+package vehicles;
 
-import interfaces.Edible;
+import farm.CropRow;
 import interfaces.FarmVehicle;
-
-import java.util.ArrayList;
-import java.util.List;
 
 
 public class Tractor extends Vehicle implements FarmVehicle {
@@ -24,7 +21,10 @@ public class Tractor extends Vehicle implements FarmVehicle {
 
     @Override
     public void harvest(CropRow cropRow) {
+        cropRow.yield();
         cropRow.harvest();
+
+
     }
 
 

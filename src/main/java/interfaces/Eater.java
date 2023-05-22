@@ -1,8 +1,5 @@
 package interfaces;
 
-import classes.Person;
-
-import java.util.LinkedList;
 import java.util.List;
 
 public interface Eater {

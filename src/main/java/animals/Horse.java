@@ -1,6 +1,6 @@
-package classes;
+package animals;
 
-import interfaces.Edible;
+import animals.Animal;
 import interfaces.Rideable;
 
 public class Horse extends Animal implements Rideable {

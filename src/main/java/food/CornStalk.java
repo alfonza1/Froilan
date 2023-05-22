@@ -1,4 +1,6 @@
-package classes;
+package food;
+
+import farm.Crop;
 
 public class CornStalk extends Crop {
 

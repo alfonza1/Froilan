@@ -1,5 +1,7 @@
-package classes;
+package farm;
 
+import farm.Crop;
+import food.*;
 import interfaces.Edible;
 
 import java.util.ArrayList;
@@ -8,9 +10,10 @@ import java.util.List;
 
 public class CropRow {
     private List<Crop> crops = new LinkedList<>();
-
+    //private List<Edible> bucket = new ArrayList<>();
     private boolean fertilized;
     private boolean harvest;
+
 
     public CropRow() {
         this.fertilized = false;
@@ -18,9 +21,16 @@ public class CropRow {
     }
 
     public CropRow(List<Crop> crops) {
+
         this.crops = crops;
     }
 
+
+    public void add(Crop crop){
+        crops.add(crop);
+
+
+    }
 
     public void fertilize() {
         this.fertilized = true;
@@ -30,31 +40,18 @@ public class CropRow {
         return fertilized;
     }
 
-
     public void harvest(){
         this.harvest = true;
     }
-
 
     public boolean isHarvested() {
         return harvest;
     }
 
-    public void add(Crop crop){
-        crops.add(crop);
-
-
-    }
-
-
-
-
-
     public boolean containsCrop(Crop crop){
 
         return true;
     }
-
 
 
     public String getCrops() {
@@ -81,5 +78,17 @@ public class CropRow {
             }
         }
         System.out.println(bucket);
+    }
+
+//    public void getBucket() {
+//        for (Edible w: bucket) {
+//            System.out.println(w);
+//        }
+//
+//    }
+
+    @Override
+    public String toString() {
+        return "CropRow";
     }
 }

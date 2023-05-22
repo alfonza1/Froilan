@@ -1,9 +1,10 @@
-package classes;
+package food;
 
-public class CarrotRoot extends Crop{
+import farm.Crop;
+
+public class PotatoRoot extends Crop {
 
     public boolean hasBeenFertilized(){
         return false;
     }
-
 }

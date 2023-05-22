@@ -1,4 +1,4 @@
-package classes;
+package vehicles;
 
 
 import interfaces.NoiseMaker;

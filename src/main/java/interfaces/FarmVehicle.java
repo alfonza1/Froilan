@@ -1,6 +1,5 @@
 package interfaces;
-import classes.CropRow;
-import classes.Farm;
+import farm.CropRow;
 
 public interface FarmVehicle {
 
