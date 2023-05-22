@@ -1,9 +1,16 @@
 package com.zipcodewilmington.froilansfarm;
-import classes.*;
+import farm.Crop;
+import farm.CropRow;
+import food.*;
+import people.Farmer;
+import people.Pilot;
 import interfaces.Edible;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import classes.Horse;
+import animals.Horse;
+import vehicles.CropDuster;
+import vehicles.Tractor;
+
 import java.util.LinkedList;
 import java.util.List;
 
@@ -57,7 +64,7 @@ public class MainApplicationTest {
 
         assertEquals(8,froilan.ateAmount());
         assertEquals(5,froilanda.ateAmount());
-       // assertEquals(3,horse.ateAmount());
+//        assertEquals(3,horse.ateAmount());
 
     }
 
@@ -146,6 +153,7 @@ public class MainApplicationTest {
         assertTrue(cropRow1.isHarvested());
         assertTrue(cropRow2.isHarvested());
         assertTrue(cropRow3.isHarvested());
+
 
     }
 

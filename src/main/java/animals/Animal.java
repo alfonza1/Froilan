@@ -1,4 +1,4 @@
-package classes;
+package animals;
 
 import interfaces.Eater;
 import interfaces.Edible;

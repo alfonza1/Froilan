@@ -1,5 +1,7 @@
-package classes;
+package people;
 
+import animals.Animal;
+import vehicles.Vehicle;
 import enums.DaysOfTheWeek;
 import interfaces.*;
 

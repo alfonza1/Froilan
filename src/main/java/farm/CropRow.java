@@ -1,5 +1,7 @@
-package classes;
+package farm;
 
+import farm.Crop;
+import food.*;
 import interfaces.Edible;
 
 import java.util.ArrayList;
@@ -8,13 +10,9 @@ import java.util.List;
 
 public class CropRow {
     private List<Crop> crops = new LinkedList<>();
-    List<Edible> bucket = new ArrayList<>();
-
-
-
-        private boolean fertilized;
-
-        private boolean harvest;
+    //private List<Edible> bucket = new ArrayList<>();
+    private boolean fertilized;
+    private boolean harvest;
 
 
         public CropRow() {
@@ -24,7 +22,7 @@ public class CropRow {
 
     public CropRow(List<Crop> crops) {
 
-       this.crops = new LinkedList<>();
+       this.crops = crops;
     }
 
 
@@ -34,7 +32,6 @@ public class CropRow {
 
     }
 
-
         public void fertilize() {
             this.fertilized = true;
         }
@@ -43,19 +40,15 @@ public class CropRow {
             return fertilized;
         }
 
-
         public void harvest(){
             this.harvest = true;
         }
-
 
         public boolean isHarvested() {
         return harvest;
         }
 
-
-
-    public boolean containsCrop(Crop crop){
+        public boolean containsCrop(Crop crop){
 
         return true;
     }
@@ -69,7 +62,7 @@ public class CropRow {
     }
 
     public void yield() {
-//        List<Edible> bucket = new ArrayList<>();
+        List<Edible> bucket = new ArrayList<>();
         for (Crop crop : crops) {
             if (crop.toString().equals("CornStalk")) {
                 //crops.remove(crop);
@@ -87,9 +80,12 @@ public class CropRow {
         System.out.println(bucket);
     }
 
-    public List<Edible> getBucket() {
-        return bucket;
-    }
+//    public void getBucket() {
+//        for (Edible w: bucket) {
+//            System.out.println(w);
+//        }
+//
+//    }
 
     @Override
     public String toString() {

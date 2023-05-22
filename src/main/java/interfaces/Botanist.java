@@ -1,7 +1,7 @@
 package interfaces;
 
-import classes.Crop;
-import classes.CropRow;
+import farm.Crop;
+import farm.CropRow;
 
 public interface Botanist {
 
