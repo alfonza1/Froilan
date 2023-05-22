@@ -4,13 +4,60 @@ import enums.DaysOfTheWeek;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import classes.Horse;
+import interfaces.Edible;
+
+import java.util.LinkedList;
 
 /**
  * Created by leon on 2/26/18.
  */
 public class MainApplicationTest {
 
+    @Test
+    void MorningTest(){
+        Farmer froilan = new Farmer("Froilan");
+        Pilot froilanda = new Pilot("Froilanda");
 
+        Horse horse = new Horse();
+
+        Edible corn = new Corn();
+        Tomato tomato = new Tomato();
+        EdibleEgg egg = new EdibleEgg();
+
+        froilan.mount(horse);
+
+        LinkedList<Edible> corns = new LinkedList<>();
+
+        corns.add(corn);
+        corns.add(corn);
+        corns.add(corn);
+
+        froilan.feedAnimal(horse,corns);
+
+        froilan.eat(corn);
+
+        froilan.eat(tomato);
+        froilan.eat(tomato);
+
+        froilan.eat(egg);
+        froilan.eat(egg);
+        froilan.eat(egg);
+        froilan.eat(egg);
+        froilan.eat(egg);
+
+        froilanda.eat(corn);
+        froilanda.eat(corn);
+
+        froilanda.eat(tomato);
+
+        froilanda.eat(egg);
+        froilanda.eat(egg);
+
+        assertTrue(froilan.hasAte());
+        assertTrue(froilanda.hasAte());
+        assertTrue(horse.hasAte());
+
+    }
     @Test //sunday
     void SundayTest() {
         // Create a Farmer object
