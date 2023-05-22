@@ -77,7 +77,7 @@ public class CropRow {
                 bucket.add(new Pineapple());
             }
         }
-        System.out.println(bucket);
+
     }
 
 //    public void getBucket() {
