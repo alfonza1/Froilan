@@ -21,14 +21,14 @@ private boolean mounted;
 
     @Override
     public void plant(Crop crop, CropRow cropRow) {
-        System.out.println(getName() + " is adding "+ crop + "to "+ cropRow);
+        System.out.println(getName() + " is adding "+ crop + " to " + cropRow);
     cropRow.add(crop);
     }
 
 
     @Override
     public void eat(Edible edible) {
-        System.out.println("now eating " + edible);
+        System.out.println("I am now eating " + edible);
         this.edible.add(edible);
         hasAte();
     }
@@ -54,14 +54,14 @@ private boolean mounted;
 
     @Override
     public void mount(Rideable rideable) {
-        System.out.println("Mounting" + rideable);
+        System.out.println("Mounting " + rideable);
         mounted = true;
     }
 
     @Override
     public void dismount(Rideable rideable) {
 if(mounted == true){
-    System.out.println("Dismounting" + rideable);
+    System.out.println("Dismounting " + rideable);
     mounted = false;
 }
 else{

@@ -90,4 +90,9 @@ public class CropRow {
     public List<Edible> getBucket() {
         return bucket;
     }
+
+    @Override
+    public String toString() {
+        return "CropRow";
+    }
 }

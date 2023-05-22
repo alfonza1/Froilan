@@ -27,6 +27,7 @@ public class CropDuster extends Vehicle implements Aircraft, FarmVehicle {
     public void fertilize(CropRow cropRow) {
 
         cropRow.fertilize();
+        System.out.println(cropRow + " has been fertilized");
 
     }
 
@@ -40,8 +41,8 @@ public class CropDuster extends Vehicle implements Aircraft, FarmVehicle {
         System.out.println("whooooooo zinggg whoooo");
     }
 
-
-
-
-
+    @Override
+    public String toString() {
+        return "CropDuster";
+    }
 }
