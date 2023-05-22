@@ -13,7 +13,9 @@ public class CropRow {
 
 
         private boolean fertilized;
-    private boolean harvest;
+
+        private boolean harvest;
+
 
         public CropRow() {
             this.fertilized = false;
@@ -40,17 +42,10 @@ public class CropRow {
 
 
 
-
-
-
     public boolean containsCrop(Crop crop){
 
         return true;
     }
-
-
-
-
 
 
 
