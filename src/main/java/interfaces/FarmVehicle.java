@@ -8,7 +8,15 @@ public interface FarmVehicle {
 
    void fertilize(CropRow cropRow);
 
+
+
     void harvest(CropRow cropRow);
+
+
+
+
+    void harvest(CropRow cropRow);
+
 
 
 }

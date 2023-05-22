@@ -6,6 +6,7 @@ import interfaces.Aircraft;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Arrays;
 
 /**
  * Created by leon on 2/26/18.
@@ -49,6 +50,14 @@ public class MainApplication {
         CropRow cropRow3 = new CropRow(crop3);
         CropRow cropRow4 = new CropRow(crop4);
         CropRow cropRow5 = new CropRow(crop5);
+
+
+
+        System.out.println(cropRow1.getCrops());
+        System.out.println(cropRow2.getCrops());
+        System.out.println(cropRow3.getCrops());
+        System.out.println(cropRow4.getCrops());
+        System.out.println(cropRow5.getCrops());
 
 
 
@@ -131,9 +140,19 @@ public class MainApplication {
         Tractor tractor = new Tractor();
         CropDuster cropDuster = new CropDuster();
 
+        Pilot pilot = new Pilot("Froilanda");
+        List<Person> Pilot = new LinkedList<>();
+        Pilot.add(pilot);
+
+        Farmer farmer = new Farmer("Froilan");
+        List<Person> Farmer = new LinkedList<>();
+        Farmer.add(farmer);
+
         Farmer froilan = new Farmer("Froilan");
         Pilot froilanda = new Pilot("Froilanda");
 
+        Farmer froilan = new Farmer("Froilan");
+        Pilot froilanda = new Pilot("Froilanda");
 
 
 
@@ -145,8 +164,23 @@ public class MainApplication {
         farmers.add(froilan);
         farmers.add(froilanda);
 
+
         FarmHouse farmHouse = new FarmHouse(farmers);
 
+
+
+        froilanda.setVehicle(cropDuster);
+        froilanda.mount(cropDuster);
+        cropDuster.fly();
+        cropDuster.makeNoise();
+
+        froilan.setVehicle(tractor);
+        froilan.mount(tractor);
+        tractor.makeNoise();
+
+        Person.setDay(DaysOfTheWeek.Monday);
+        System.out.println(froilan.getDay());
+        System.out.println(froilanda.getDay());
 
 
 
@@ -203,10 +237,25 @@ public class MainApplication {
 
 
 
+        //Field field = new Field((List<CropRow>) cropRow1);
 
 
+        froilanda.setVehicle(cropDuster);
+        froilanda.mount(cropDuster);
+        cropDuster.fly();
+        cropDuster.makeNoise();
 
+        froilan.setVehicle(tractor);
+        froilan.mount(tractor);
+        tractor.makeNoise();
+
+        Person.setDay(DaysOfTheWeek.Monday);
+        System.out.println(froilan.getDay());
+        System.out.println(froilanda.getDay());
 
     }
+
+
+}
 
 

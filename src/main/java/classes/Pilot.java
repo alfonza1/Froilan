@@ -9,6 +9,10 @@ import java.util.List;
 
 public class Pilot extends Person implements Rider {
 
+
+    private List<Edible> edible;
+
+
     public Pilot(String name) {
         super(name);
     }
@@ -17,10 +21,25 @@ public class Pilot extends Person implements Rider {
     @Override
     public void eat(Edible edible) {
 
+        this.edible.add(edible);
+        hasAte();
+
     }
 
     @Override
     public void eat(List<Edible> edible) {
+
+        this.edible = edible;
+
+    }
+    public int ateAmount() {
+        int i = 0;
+        for(Edible edible: edible){
+            i++;
+
+        }
+        return i;
+
 
     }
 
