@@ -34,6 +34,11 @@ public class CropDuster extends Vehicle implements Aircraft, FarmVehicle {
     }
 
     @Override
+    public void harvest(CropRow cropRow) {
+
+    }
+
+    @Override
     public void makeNoise() {
         System.out.println("whooooooo zinggg whoooo");
     }

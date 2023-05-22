@@ -51,11 +51,26 @@ public class MainApplication {
         CropRow cropRow4 = new CropRow(crop4);
         CropRow cropRow5 = new CropRow(crop5);
 
+
         System.out.println(cropRow1.getCrops());
         System.out.println(cropRow2.getCrops());
         System.out.println(cropRow3.getCrops());
         System.out.println(cropRow4.getCrops());
         System.out.println(cropRow5.getCrops());
+
+
+//        System.out.println(cropRow1.getCrops());
+//        System.out.println(cropRow2.getCrops());
+//        System.out.println(cropRow3.getCrops());
+//        System.out.println(cropRow4.getCrops());
+//        System.out.println(cropRow5.getCrops());
+
+        System.out.println(cropRow1.getCrops());
+        System.out.println(cropRow2.getCrops());
+        System.out.println(cropRow3.getCrops());
+        System.out.println(cropRow4.getCrops());
+        System.out.println(cropRow5.getCrops());
+
 
         cropRow1.yield();
         cropRow2.yield();
@@ -123,7 +138,6 @@ public class MainApplication {
         Tractor tractor = new Tractor();
         CropDuster cropDuster = new CropDuster();
 
-
         Pilot pilot = new Pilot("Froilanda");
         List<Person> Pilot = new LinkedList<>();
         Pilot.add(pilot);
@@ -141,9 +155,22 @@ public class MainApplication {
         farmers.add(froilanda);
 
 
+        FarmHouse farmHouse = new FarmHouse(farmers);
 
 
-        FarmHouse farmHouse = new FarmHouse(Farmer);
+        froilanda.setVehicle(cropDuster);
+        froilanda.mount(cropDuster);
+        cropDuster.fly();
+        cropDuster.makeNoise();
+
+        froilan.setVehicle(tractor);
+        froilan.mount(tractor);
+        tractor.makeNoise();
+
+        Person.setDay(DaysOfTheWeek.Monday);
+        System.out.println(froilan.getDay());
+        System.out.println(froilanda.getDay());
+
 
         //Field field = new Field((List<CropRow>) cropRow1);
 
@@ -161,10 +188,8 @@ public class MainApplication {
         System.out.println(froilan.getDay());
         System.out.println(froilanda.getDay());
 
-        }
-
     }
 
-
+}
 
 

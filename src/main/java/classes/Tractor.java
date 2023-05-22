@@ -8,7 +8,6 @@ import java.util.List;
 
 public class Tractor extends Vehicle implements FarmVehicle {
 
-
     @Override
     public void operate(Farm farm) {
 
@@ -18,6 +17,11 @@ public class Tractor extends Vehicle implements FarmVehicle {
     @Override
     public void fertilize(CropRow cropRow) {
 
+    }
+
+    @Override
+    public void harvest(CropRow cropRow) {
+        cropRow.harvest();
     }
 
 

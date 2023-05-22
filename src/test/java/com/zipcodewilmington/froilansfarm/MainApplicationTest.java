@@ -1,13 +1,67 @@
 package com.zipcodewilmington.froilansfarm;
 import classes.*;
+import enums.DaysOfTheWeek;
+
+import interfaces.Edible;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import classes.Horse;
+
+import java.util.LinkedList;
 
 /**
  * Created by leon on 2/26/18.
  */
 public class MainApplicationTest {
+
+
+    @Test
+    void MorningTest(){
+        Farmer froilan = new Farmer("Froilan");
+        Pilot froilanda = new Pilot("Froilanda");
+
+        Horse horse = new Horse();
+
+        Edible corn = new Corn();
+        Tomato tomato = new Tomato();
+        EdibleEgg egg = new EdibleEgg();
+
+        froilan.mount(horse);
+
+        LinkedList<Edible> corns = new LinkedList<>();
+
+        corns.add(corn);
+        corns.add(corn);
+        corns.add(corn);
+
+        froilan.feedAnimal(horse,corns);
+
+        froilan.eat(corn);
+
+        froilan.eat(tomato);
+        froilan.eat(tomato);
+
+        froilan.eat(egg);
+        froilan.eat(egg);
+        froilan.eat(egg);
+        froilan.eat(egg);
+        froilan.eat(egg);
+
+        froilanda.eat(corn);
+        froilanda.eat(corn);
+
+        froilanda.eat(tomato);
+
+        froilanda.eat(egg);
+        froilanda.eat(egg);
+
+        assertTrue(froilan.hasAte());
+        assertTrue(froilanda.hasAte());
+        assertTrue(horse.hasAte());
+        assertEquals(8, froilan.ateAmount());
+        assertEquals(5, froilanda.ateAmount());
+
+    }
 
 
     @Test //sunday
@@ -36,7 +90,7 @@ public class MainApplicationTest {
         assertTrue(cropRow3.containsCrop(potatoRoot));
     }
 
-    
+
 
     @Test  //Monday Test
       public void MondayTest() {
@@ -44,6 +98,7 @@ public class MainApplicationTest {
             CropDuster cropDuster = new CropDuster();
 
             Pilot froilanda = new Pilot("Froilanda");
+
 
             // Create CropRows and crops
             CropRow cropRow1 = new CropRow();
@@ -64,24 +119,32 @@ public class MainApplicationTest {
         // Add more test cases for other Monday-specific tasks
 
 
-        @Test
-         public void TuesdayTest(){
+    @Test
+    void TuesdayTest() {
+        // Create a Tractor object
+        Tractor tractor = new Tractor();
 
-            Tractor tractor = new Tractor();
+        Farmer froilan = new Farmer("Froilan");
+        Pilot froilanda = new Pilot("Froilanda");
 
-            Farmer froilan = new Farmer("Froilan");
+        // Create CropRows and crops
+        CropRow cropRow1 = new CropRow();
+        CropRow cropRow2 = new CropRow();
+        CropRow cropRow3 = new CropRow();
 
+        // Harvest the crops using the Tractor
+        tractor.harvest(cropRow1);
+        tractor.harvest(cropRow2);
+        tractor.harvest(cropRow3);
 
-
-
-
-
-        }
+        // Assert that the crops have been harvested
+        assertTrue(cropRow1.isHarvested());
+        assertTrue(cropRow2.isHarvested());
+        assertTrue(cropRow3.isHarvested());
 
     }
 
 
-
-
+}
 
 

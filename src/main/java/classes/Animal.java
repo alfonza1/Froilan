@@ -8,6 +8,7 @@ import java.util.List;
 
 public abstract class Animal implements NoiseMaker, Eater {
 
+    private boolean hasAte = false;
 
     public Animal() {
     }
@@ -25,5 +26,9 @@ public abstract class Animal implements NoiseMaker, Eater {
         return getClass().getSimpleName();
 
 
+    }
+    public boolean hasAte(){
+        hasAte = true;
+        return hasAte;
     }
 }
