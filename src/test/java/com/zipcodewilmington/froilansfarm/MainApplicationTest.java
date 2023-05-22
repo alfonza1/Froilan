@@ -46,6 +46,7 @@ public class MainApplicationTest {
         horse.eat(corns);
 
 
+
         froilan.dismount(horse);
 
         froilan.eat(corn);
@@ -144,13 +145,12 @@ public class MainApplicationTest {
 
 
         Farmer froilan = new Farmer("Froilan");
-<<<<<<< HEAD
-        //Pilot froilanda = new Pilot("Froilanda");
 
-=======
         Pilot froilanda = new Pilot("Froilanda");
         Person.setDay(DaysOfTheWeek.Tuesday);
->>>>>>> master
+
+        
+
 
         // Create CropRows and crops
         CropRow cropRow1 = new CropRow();
