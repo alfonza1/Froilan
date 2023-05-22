@@ -26,6 +26,7 @@ private List<Edible> edible;
 
     @Override
     public void eat(Edible edible) {
+        System.out.println("now eating " + edible);
         this.edible.add(edible);
         hasAte();
     }
@@ -33,8 +34,8 @@ private List<Edible> edible;
     @Override
     public void eat(List<Edible> edible) {
         this.edible = edible;
-
     }
+    
     public int ateAmount() {
         int i = 0;
         for(Edible edible: edible){

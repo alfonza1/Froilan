@@ -11,8 +11,7 @@ public class Tractor extends Vehicle implements FarmVehicle {
 
 
     @Override
-    public void operate(Farm farm) {
-
+    public void operate(CropRow cropRow) {
 
     }
 
