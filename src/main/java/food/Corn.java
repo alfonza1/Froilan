@@ -1,4 +1,4 @@
-package classes;
+package food;
 
 import interfaces.Edible;
 import interfaces.Produce;

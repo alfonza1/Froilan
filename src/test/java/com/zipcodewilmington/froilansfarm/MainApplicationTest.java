@@ -1,9 +1,19 @@
 package com.zipcodewilmington.froilansfarm;
-import classes.*;
+import enums.DaysOfTheWeek;
+import farm.Crop;
+import farm.CropRow;
+import food.*;
+import people.Farmer;
+import people.Person;
+import people.Pilot;
 import interfaces.Edible;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import classes.Horse;
+import animals.Horse;
+import vehicles.CropDuster;
+import vehicles.Tractor;
+
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -33,6 +43,9 @@ public class MainApplicationTest {
         corns.add(corn);
 
         froilan.feedAnimal(horse,corns);
+        horse.eat(corns);
+
+
 
         froilan.dismount(horse);
 
@@ -57,7 +70,7 @@ public class MainApplicationTest {
 
         assertEquals(8,froilan.ateAmount());
         assertEquals(5,froilanda.ateAmount());
-       // assertEquals(3,horse.ateAmount());
+        assertEquals(3,horse.ateAmount());
 
     }
 
@@ -65,6 +78,8 @@ public class MainApplicationTest {
     void SundayTest() {
         // Create a Farmer object
         Farmer froilan = new Farmer("Froilan");
+        Person.setDay(DaysOfTheWeek.Sunday);
+
 
 
         // Create CropRows
@@ -98,7 +113,7 @@ public class MainApplicationTest {
 
 
         Pilot froilanda = new Pilot("Froilanda");
-
+        Person.setDay(DaysOfTheWeek.Monday);
 
 
             // Create CropRows and crops
@@ -125,11 +140,16 @@ public class MainApplicationTest {
     @Test
     void TuesdayTest() {
         // Create a Tractor object
+        //List<Edible> bucket = new ArrayList<>();
         Tractor tractor = new Tractor();
 
 
         Farmer froilan = new Farmer("Froilan");
+
         Pilot froilanda = new Pilot("Froilanda");
+        Person.setDay(DaysOfTheWeek.Tuesday);
+
+
 
 
         // Create CropRows and crops
@@ -138,14 +158,20 @@ public class MainApplicationTest {
         CropRow cropRow3 = new CropRow();
 
         // Harvest the crops using the Tractor
+
+        froilan.mount(tractor);
+
         tractor.harvest(cropRow1);
         tractor.harvest(cropRow2);
         tractor.harvest(cropRow3);
+
+        froilan.dismount(tractor);
 
         // Assert that the crops have been harvested
         assertTrue(cropRow1.isHarvested());
         assertTrue(cropRow2.isHarvested());
         assertTrue(cropRow3.isHarvested());
+
 
     }
 

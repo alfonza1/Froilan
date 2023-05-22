@@ -1,4 +1,6 @@
-package classes;
+package farm;
+
+import farm.CropRow;
 
 import java.util.LinkedList;
 import java.util.List;
