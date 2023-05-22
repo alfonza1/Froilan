@@ -59,12 +59,6 @@ public class MainApplicationTest {
 
     }
 
-
-
-
-
-
-
     @Test //sunday
     void SundayTest() {
         // Create a Farmer object
@@ -95,33 +89,35 @@ public class MainApplicationTest {
 
 
     @Test  //Monday Test
-      public void MondayTest() {
+    public void MondayTest() {
+
             // Create a CropDuster object
-            CropDuster cropDuster = new CropDuster();
+        CropDuster cropDuster = new CropDuster();
 
 
-            Pilot froilanda = new Pilot("Froilanda");
+        Pilot froilanda = new Pilot("Froilanda");
 
 
 
             // Create CropRows and crops
-            CropRow cropRow1 = new CropRow();
-            CropRow cropRow2 = new CropRow();
-            CropRow cropRow3 = new CropRow();
+        CropRow cropRow1 = new CropRow();
+        CropRow cropRow2 = new CropRow();
+        CropRow cropRow3 = new CropRow();
+
+        froilanda.mount(cropDuster);
 
             // Fertilize the crop rows using the CropDuster
-            cropDuster.fertilize(cropRow1);
-            cropDuster.fertilize(cropRow2);
-            cropDuster.fertilize(cropRow3);
+        cropDuster.fertilize(cropRow1);
+        cropDuster.fertilize(cropRow2);
+        cropDuster.fertilize(cropRow3);
+
+        froilanda.dismount(cropDuster);
 
             // Assert that the crop rows have been fertilized
-            assertTrue(cropRow1.isFertilized());
-            assertTrue(cropRow2.isFertilized());
-            assertTrue(cropRow3.isFertilized());
-        }
-
-        // Add more test cases for other Monday-specific tasks
-
+        assertTrue(cropRow1.isFertilized());
+        assertTrue(cropRow2.isFertilized());
+        assertTrue(cropRow3.isFertilized());
+    }
 
 
     @Test
