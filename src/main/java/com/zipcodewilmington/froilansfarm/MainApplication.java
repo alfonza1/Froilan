@@ -52,11 +52,13 @@ public class MainApplication {
         CropRow cropRow5 = new CropRow(crop5);
 
 
+
         System.out.println(cropRow1.getCrops());
         System.out.println(cropRow2.getCrops());
         System.out.println(cropRow3.getCrops());
         System.out.println(cropRow4.getCrops());
         System.out.println(cropRow5.getCrops());
+
 
 
 //        System.out.println(cropRow1.getCrops());
@@ -149,6 +151,14 @@ public class MainApplication {
         Farmer froilan = new Farmer("Froilan");
         Pilot froilanda = new Pilot("Froilanda");
 
+        Farmer froilan = new Farmer("Froilan");
+        Pilot froilanda = new Pilot("Froilanda");
+
+
+
+
+
+
 
         List<Person> farmers = new LinkedList<>();
         farmers.add(froilan);
@@ -156,6 +166,7 @@ public class MainApplication {
 
 
         FarmHouse farmHouse = new FarmHouse(farmers);
+
 
 
         froilanda.setVehicle(cropDuster);
@@ -170,6 +181,60 @@ public class MainApplication {
         Person.setDay(DaysOfTheWeek.Monday);
         System.out.println(froilan.getDay());
         System.out.println(froilanda.getDay());
+
+
+
+
+
+
+
+
+
+
+
+
+        froilanda.setVehicle(cropDuster);
+        froilanda.mount(cropDuster);
+        cropDuster.fly();
+        cropDuster.makeNoise();
+
+        froilan.setVehicle(tractor);
+        froilan.mount(tractor);
+        tractor.makeNoise();
+
+        Person.setDay(DaysOfTheWeek.Monday);
+        System.out.println(froilan.getDay());
+        System.out.println(froilanda.getDay());
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         //Field field = new Field((List<CropRow>) cropRow1);
@@ -189,6 +254,7 @@ public class MainApplication {
         System.out.println(froilanda.getDay());
 
     }
+
 
 }
 

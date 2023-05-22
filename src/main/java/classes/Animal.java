@@ -16,6 +16,7 @@ public abstract class Animal implements NoiseMaker, Eater {
     @Override
     public abstract void makeNoise();
 
+
     @Override
     public void eat(List<Edible> edible) {
         System.out.println("nom nom");
@@ -30,5 +31,11 @@ public abstract class Animal implements NoiseMaker, Eater {
     public boolean hasAte(){
         hasAte = true;
         return hasAte;
+
+    @Override
+    public void eat(List<Edible> edible) {
+
+    System.out.println("nom nom");
+
     }
 }

@@ -20,7 +20,32 @@ public class Farmer extends Person implements Botanist {
 
     }
 
+
+
     @Override
+    public void eat(Edible edible) {
+
+
+    }
+
+    @Override
+    public void eat(List<Edible> edible) {
+
+    }
+
+    @Override
+    public void makeNoise() {
+
+    }
+
+    @Override
+    public void mount(Rideable rideable) {
+
+
+    }
+
+    @Override
+
     public void eat(Edible edible) {
         this.edible.add(edible);
         hasAte();
@@ -51,6 +76,7 @@ public class Farmer extends Person implements Botanist {
     }
 
     @Override
+
     public void dismount(Rideable rideable) {
 
     }

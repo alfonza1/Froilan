@@ -10,7 +10,10 @@ public class CropRow {
     private List<Crop> crops = new LinkedList<>();
 
         private boolean fertilized;
+
         private boolean harvest;
+
+    private boolean harvest;
 
 
         public CropRow() {
@@ -42,7 +45,6 @@ public class CropRow {
 
         return true;
     }
-
 
 
 

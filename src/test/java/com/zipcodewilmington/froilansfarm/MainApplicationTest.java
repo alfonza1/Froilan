@@ -2,6 +2,7 @@ package com.zipcodewilmington.froilansfarm;
 import classes.*;
 import enums.DaysOfTheWeek;
 
+
 import interfaces.Edible;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -9,10 +10,16 @@ import classes.Horse;
 
 import java.util.LinkedList;
 
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import classes.Horse;
+
+
 /**
  * Created by leon on 2/26/18.
  */
 public class MainApplicationTest {
+
 
 
     @Test
@@ -64,10 +71,12 @@ public class MainApplicationTest {
     }
 
 
+
     @Test //sunday
     void SundayTest() {
         // Create a Farmer object
         Farmer froilan = new Farmer("Froilan");
+
 
         // Create CropRows
         CropRow cropRow1 = new CropRow();
@@ -97,7 +106,9 @@ public class MainApplicationTest {
             // Create a CropDuster object
             CropDuster cropDuster = new CropDuster();
 
+
             Pilot froilanda = new Pilot("Froilanda");
+
 
 
             // Create CropRows and crops
@@ -119,13 +130,16 @@ public class MainApplicationTest {
         // Add more test cases for other Monday-specific tasks
 
 
+
     @Test
     void TuesdayTest() {
         // Create a Tractor object
         Tractor tractor = new Tractor();
 
+
         Farmer froilan = new Farmer("Froilan");
         Pilot froilanda = new Pilot("Froilanda");
+
 
         // Create CropRows and crops
         CropRow cropRow1 = new CropRow();
@@ -146,5 +160,25 @@ public class MainApplicationTest {
 
 
 }
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
 
 

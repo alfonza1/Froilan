@@ -42,12 +42,16 @@ public abstract class Person implements NoiseMaker, Eater, Rider {
     public void feedAnimal(Animal animal, List<Edible> edible){
     System.out.println(animal + "is eating" + edible);
         animal.eat(edible);
+
     }
 
     public boolean hasAte(){
         hasAte = true;
         return hasAte;
     }
+
+
+}
 
 
 }
