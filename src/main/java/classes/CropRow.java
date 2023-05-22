@@ -25,6 +25,7 @@ public class CropRow {
     public CropRow(List<Crop> crops) {
 
        this.crops = new LinkedList<>();
+
     }
 
 
@@ -69,7 +70,7 @@ public class CropRow {
     }
 
     public void yield() {
-//        List<Edible> bucket = new ArrayList<>();
+
         for (Crop crop : crops) {
             if (crop.toString().equals("CornStalk")) {
                 //crops.remove(crop);
