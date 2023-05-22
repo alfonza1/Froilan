@@ -20,7 +20,7 @@ public class Chicken extends Animal implements Produce {
 
     @Override
     public void makeNoise() {
-
+        System.out.println("BA BA BAAAAKKK");
     }
 
     public void yield() {
@@ -32,19 +32,6 @@ public class Chicken extends Animal implements Produce {
 
         }
 
-
-    @Override
-    public void eat(Edible edible) {
-
-
-
-    }
-
-    @Override
-    public void eat(List<Edible> edible) {
-
-
-    }
 
     @Override
     public String toString() {

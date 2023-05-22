@@ -11,6 +11,7 @@ public class Farmer extends Person implements Botanist {
 
 
 private List<Edible> edible;
+private boolean mounted;
 
     public Farmer(String name) {
         super(name);
@@ -20,7 +21,8 @@ private List<Edible> edible;
 
     @Override
     public void plant(Crop crop, CropRow cropRow) {
-
+        System.out.println(getName() + " is adding "+ crop + "to "+ cropRow);
+    cropRow.add(crop);
     }
 
 
@@ -47,17 +49,24 @@ private List<Edible> edible;
     }
     @Override
     public void makeNoise() {
-
+        System.out.println("YEEEHAWWWWWWWW");
     }
 
     @Override
     public void mount(Rideable rideable) {
-
+        System.out.println("Mounting" + rideable);
+        mounted = true;
     }
 
     @Override
-
     public void dismount(Rideable rideable) {
+if(mounted == true){
+    System.out.println("Dismounting" + rideable);
+    mounted = false;
+}
+else{
+    System.out.println("No ride to dismount brokie");
+}
 
     }
 
