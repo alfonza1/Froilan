@@ -59,12 +59,6 @@ public class MainApplicationTest {
 
     }
 
-
-
-
-
-
-
     @Test //sunday
     void SundayTest() {
         // Create a Farmer object
@@ -97,13 +91,11 @@ public class MainApplicationTest {
     @Test  //Monday Test
     public void MondayTest() {
 
-        Farmer froilanda = new Farmer("Froilanda");
-
             // Create a CropDuster object
         CropDuster cropDuster = new CropDuster();
 
 
-            Pilot froilanda = new Pilot("Froilanda");
+        Pilot froilanda = new Pilot("Froilanda");
 
 
 
@@ -126,46 +118,6 @@ public class MainApplicationTest {
         assertTrue(cropRow2.isFertilized());
         assertTrue(cropRow3.isFertilized());
     }
-
-//    @Test
-//    public void TuesdayTest(){
-//
-//        Farmer froilan = new Farmer("Froilan");
-//
-//        Tractor tractor = new Tractor();
-//
-//        froilan.mount(tractor);
-//
-//        CropRow cropRow1 = new CropRow();
-//        CropRow cropRow2 = new CropRow();
-//        CropRow cropRow3 = new CropRow();
-//
-//        Crop cornStalk = new CornStalk();
-//        Crop tomatoPlant = new TomatoPlant();
-//        Crop potatoRoot = new PotatoRoot();
-//
-//        tractor.operate(cropRow1);
-//        tractor.operate(cropRow2);
-//        tractor.operate(cropRow3);
-//
-//        cropRow1.yield();
-//        cropRow2.yield();
-//        cropRow3.yield();
-//
-//        //assertTrue(cropRow1.getBucket(), cropRow1.yield());
-//
-//    }
-
-
-
-
-
-        // Add more test cases for other Monday-specific tasks
-
-
-
-        // Add more test cases for other Monday-specific tasks
-
 
 
     @Test
