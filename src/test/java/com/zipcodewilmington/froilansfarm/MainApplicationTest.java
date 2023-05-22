@@ -1,17 +1,17 @@
 package com.zipcodewilmington.froilansfarm;
 import classes.*;
-import enums.DaysOfTheWeek;
+import interfaces.Edible;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import classes.Horse;
-import interfaces.Edible;
-
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Created by leon on 2/26/18.
  */
 public class MainApplicationTest {
+
 
     @Test
     void MorningTest(){
@@ -26,7 +26,7 @@ public class MainApplicationTest {
 
         froilan.mount(horse);
 
-        LinkedList<Edible> corns = new LinkedList<>();
+        List<Edible> corns = new LinkedList<>();
 
         corns.add(corn);
         corns.add(corn);
@@ -53,11 +53,18 @@ public class MainApplicationTest {
         froilanda.eat(egg);
         froilanda.eat(egg);
 
-        assertTrue(froilan.hasAte());
-        assertTrue(froilanda.hasAte());
-        assertTrue(horse.hasAte());
+        assertEquals(8,froilan.ateAmount());
+        assertEquals(5,froilanda.ateAmount());
+        assertEquals(3,horse.ateAmount());
 
     }
+
+
+
+
+
+
+
     @Test //sunday
     void SundayTest() {
         // Create a Farmer object
@@ -92,6 +99,11 @@ public class MainApplicationTest {
             // Create a CropDuster object
             CropDuster cropDuster = new CropDuster();
 
+
+            Pilot froilanda = new Pilot("Froilanda");
+
+
+
             // Create CropRows and crops
             CropRow cropRow1 = new CropRow();
             CropRow cropRow2 = new CropRow();
@@ -108,10 +120,19 @@ public class MainApplicationTest {
             assertTrue(cropRow3.isFertilized());
         }
 
+        // Add more test cases for other Monday-specific tasks
+
+
+
     @Test
     void TuesdayTest() {
         // Create a Tractor object
         Tractor tractor = new Tractor();
+
+
+        Farmer froilan = new Farmer("Froilan");
+        Pilot froilanda = new Pilot("Froilanda");
+
 
         // Create CropRows and crops
         CropRow cropRow1 = new CropRow();
@@ -127,18 +148,27 @@ public class MainApplicationTest {
         assertTrue(cropRow1.isHarvested());
         assertTrue(cropRow2.isHarvested());
         assertTrue(cropRow3.isHarvested());
+
     }
 
 
-
-
-
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

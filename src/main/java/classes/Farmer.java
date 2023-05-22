@@ -4,14 +4,17 @@ import interfaces.Botanist;
 import interfaces.Edible;
 import interfaces.Rideable;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Farmer extends Person implements Botanist {
+
 
 private List<Edible> edible;
 
     public Farmer(String name) {
         super(name);
+        this.edible = new ArrayList<>();
     }
 
 
@@ -23,15 +26,13 @@ private List<Edible> edible;
 
     @Override
     public void eat(Edible edible) {
-
-
-
+        this.edible.add(edible);
+        hasAte();
     }
 
     @Override
     public void eat(List<Edible> edible) {
         this.edible = edible;
-
 
     }
     public int ateAmount() {
@@ -43,7 +44,6 @@ private List<Edible> edible;
         return i;
 
     }
-
     @Override
     public void makeNoise() {
 
@@ -55,6 +55,7 @@ private List<Edible> edible;
     }
 
     @Override
+
     public void dismount(Rideable rideable) {
 
     }
