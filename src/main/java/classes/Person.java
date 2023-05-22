@@ -18,6 +18,7 @@ public abstract class Person implements NoiseMaker, Eater, Rider {
     private static DaysOfTheWeek day;
     private String name;
     private Vehicle vehicle;
+    private boolean hasAte = false;
 
     public Person(String name) {
         this.name = name;
@@ -62,7 +63,14 @@ public abstract class Person implements NoiseMaker, Eater, Rider {
     public void feedAnimal(Animal animal, List<Edible> edible){
     System.out.println(animal + "is eating" + edible);
         animal.eat(edible);
-}
+
+    }
+
+    public boolean hasAte(){
+        hasAte = true;
+        return hasAte;
+    }
+
 
 }
 

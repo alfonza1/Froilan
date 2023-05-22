@@ -1,14 +1,68 @@
 package com.zipcodewilmington.froilansfarm;
 import classes.*;
-import enums.DaysOfTheWeek;
+import interfaces.Edible;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 import classes.Horse;
+import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Created by leon on 2/26/18.
  */
 public class MainApplicationTest {
+
+
+    @Test
+    void MorningTest(){
+        Farmer froilan = new Farmer("Froilan");
+        Pilot froilanda = new Pilot("Froilanda");
+
+        Horse horse = new Horse();
+
+        Edible corn = new Corn();
+        Tomato tomato = new Tomato();
+        EdibleEgg egg = new EdibleEgg();
+
+        froilan.mount(horse);
+
+        List<Edible> corns = new LinkedList<>();
+
+        corns.add(corn);
+        corns.add(corn);
+        corns.add(corn);
+
+        froilan.feedAnimal(horse,corns);
+
+        froilan.eat(corn);
+
+        froilan.eat(tomato);
+        froilan.eat(tomato);
+
+        froilan.eat(egg);
+        froilan.eat(egg);
+        froilan.eat(egg);
+        froilan.eat(egg);
+        froilan.eat(egg);
+
+        froilanda.eat(corn);
+        froilanda.eat(corn);
+
+        froilanda.eat(tomato);
+
+        froilanda.eat(egg);
+        froilanda.eat(egg);
+
+        assertEquals(8,froilan.ateAmount());
+        assertEquals(5,froilanda.ateAmount());
+        assertEquals(3,horse.ateAmount());
+
+    }
+
+
+
+
+
 
 
     @Test //sunday
@@ -45,6 +99,11 @@ public class MainApplicationTest {
             // Create a CropDuster object
             CropDuster cropDuster = new CropDuster();
 
+
+            Pilot froilanda = new Pilot("Froilanda");
+
+
+
             // Create CropRows and crops
             CropRow cropRow1 = new CropRow();
             CropRow cropRow2 = new CropRow();
@@ -61,10 +120,16 @@ public class MainApplicationTest {
             assertTrue(cropRow3.isFertilized());
         }
 
+        // Add more test cases for other Monday-specific tasks
+
+
+
     @Test
     void TuesdayTest() {
         // Create a Tractor object
         Tractor tractor = new Tractor();
+
+        Farmer froilan = new Farmer("Froilan");
 
 
         // Create CropRows and crops
@@ -85,15 +150,23 @@ public class MainApplicationTest {
     }
 
 
-
-
-
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
